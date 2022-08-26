@@ -1,0 +1,23 @@
+<div class="nav-container">
+    <nav class="nav">
+        <div class="nav-logo">
+            <a routerLink="/berries">
+                <img class="" src="assets/images/svg-pegado-5504x1532.svg">
+            </a>
+        </div>
+        <ul class="nav-menu" [class.show]="isShowMenu">               
+            <li class="nav-item"><a >our story</a></li>
+            <!-- <li class="nav-item"><a  (click)="gotoCompanies()" routerLink="/home#companies">COMPANIES</a></li> -->
+            <li class="nav-item"><a >our family</a></li>
+            <li class="nav-item"><a >our berries</a></li>
+            <li class="nav-item"><a  (click)="gotoCompanies()">contact</a></li>
+        </ul>
+        <ul class="social-menu">
+            <li><a href="https://www.facebook.com/BlueDropBerries"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/bluedrop.berries"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <span class="btn-menu" (click) = "showMenu()">
+            <i class="fa fa-bars"></i>
+        </span>                  
+    </nav>               
+</div>

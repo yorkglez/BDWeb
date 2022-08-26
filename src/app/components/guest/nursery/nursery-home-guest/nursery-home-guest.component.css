@@ -1,0 +1,126 @@
+
+.color-green
+{
+    color: #A2BF49;
+}
+/** Section Nursery Start  */
+/* .section-nursery
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  
+}
+.section-nursery .content
+{
+    width: 500px;
+}
+.section-nursery .content .header h1
+{
+    text-align: left;
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: lato, sans-serif;
+    color: #173853;
+}
+.section-nursery .content .text
+{
+    line-height: 26px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 500;
+    color: #173853;   
+}
+.section-nursery .content .text p 
+{
+    margin-bottom: 20px;
+}
+.section-nursery .image
+{
+    background-color: darkcyan;
+    width: 634px;
+} */
+/** Section Nursery End  */
+/** Section Why Nursery Start  */
+/* .section-why-nursery
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+  
+    width: 100%;
+    height: 600px;
+    background-color: darkorange;
+
+}
+.section-why-nursery .header 
+{
+    position: absolute;
+    width: auto;
+    height: 50px;
+
+}
+.section-why-nursery .cards
+{
+    display: flex;
+
+    width: 70%;
+    height: auto;
+
+}
+
+.section-why-nursery .cards .card
+{
+    position: relative;
+    height: 400px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+} */
+/* .section-why-nursery .cards .card .background-circle
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C8DD99;
+    border-radius: 50%;
+    width: 126px;
+    height: 126px;
+}
+.section-why-nursery .cards .card .background-circle img 
+{
+    width: 62px;
+    height: 75px;
+}
+.section-why-nursery .cards .card .header
+{
+    position: relative;
+}
+.section-why-nursery .cards .card .header h1
+{
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    line-height: 24px;
+   
+    font-family: lato, sans-serif;
+    font-size: 17px;
+    color: #C8DD99;
+}
+.section-why-nursery .cards .card .text 
+{
+    font-weight: 300;
+    font-family: lato, sans-serif;
+    color: #173853;
+    line-height: 20px;
+    text-align: left;
+    font-size: 14px;
+} */
+/* Section Why Nursery End  */

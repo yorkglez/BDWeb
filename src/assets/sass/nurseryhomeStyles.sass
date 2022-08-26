@@ -1,0 +1,685 @@
+$principal-color: #173853
+$green-color: #A2BF49  
+$card-color-1: #C8DD99
+$card-color-2: #B6D37F
+$card-color-3: #A2BF4A
+$card-color-4: #7EB048
+$card-color-5: #66913D
+$card-color-6: #456C44
+$smallScreen: 520px 
+$tabletScreen: 952px
+$desktopScreen: 1366px
+$LargeDesktopScreen: 1920px
+
+body 
+    font-family: lato, sans-serif
+.container
+    font-family: lato, sans-serif
+    width:  100%
+    height: auto
+    display: flex
+    align-items: center
+    flex-direction: column
+    .header
+        width: 100% !important
+        height: 85px
+    .section-header
+        // display: none
+        position: relative
+        width: 100%
+        height: 790px
+        margin-bottom: 50px
+        .background-image
+            width: 100%
+            img 
+                width: 100%
+        .content
+            display: flex
+            justify-content: center
+            position: absolute 
+            top: 0
+            width: 100%
+            height: 100%
+            background-color: none
+            .header 
+                width: 700px
+                text-align: center
+                color: #fff
+                font-size: 54px
+                line-height: 51px
+                margin-top: 120px
+                font-weight: 900
+                text-shadow: 6px 6px 8px rgba(0, 0, 0, .8)
+    .section-nursery 
+        // display: none
+        display: flex
+        margin-bottom: 80px
+        .image
+            width: 634px
+            img 
+                border-radius: 300px 0px 300px 0px
+        .content        
+            margin-left: 30px
+            margin-top: 25px
+            .header
+                color: $principal-color
+                width: 360px
+            .text 
+                // width: 500px
+                p 
+                    color: $principal-color
+                    line-height: 26px
+                    text-align: left
+                    font-size: 22px
+                    font-weight: 500
+                    margin-bottom: 25px
+        // display: none
+    .section-why-nursery
+        // display: none
+        position: relative
+        width: 70%
+        height: 500px
+        margin-bottom: 50px
+        .decoration-margin-top-left
+            left: 0
+            top: 0     
+            border-width: 3px 0px 0px 3px   
+            border-style: solid 
+        .decoration-margin-top-right
+            right: 0
+            top: 0     
+            border-width: 3px 3px 0px 0px   
+            border-style: solid 
+        .decoration-margin-down-left          
+            left: 0
+            bottom: 0     
+            border-width: 0px 0px 3px 3px   
+            border-style: solid 
+        .decoration-margin-down-right
+            // position: relative
+            right: 0
+            bottom: 0
+            border-width: 0px 3px 3px 0px   
+            border-style: solid 
+            // margin-bottom: 50px
+        .decoration-margin              
+            position: absolute
+            border-color: #A2BF49
+            height: 82px
+            width: 180px
+            z-index: 300
+        .why-content
+            position: relative
+            display: flex
+            flex-direction: column
+            align-items: center
+            height: 100%
+            width: 100%
+            margin-top: 50px
+            .s-header
+                h1
+                    font-size: 30px
+                    line-height: 33px
+                    color: $principal-color
+                    text-align: center
+                    font-weight: 900
+                    text-transform: uppercase
+            .cards
+                display: flex
+                justify-content: space-around
+                width: 90%
+                height: auto
+                .card
+                    margin-top: 50px
+                    position: relative
+                    height: auto
+                    width: 200px
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    .card-header
+                        margin-bottom: 20px
+                        width: 120px
+                        h1
+                            font-weight: 700
+                            text-align: center
+                            text-transform: none
+                            line-height: 24px                
+                            font-family: lato, sans-serif
+                            font-size: 17px
+                            // color: #C8DD99
+                        .card-title-color-1
+                            color: $card-color-1
+                        .card-title-color-2
+                            color: $card-color-2
+                        .card-title-color-3
+                            color: $card-color-3
+                        .card-title-color-4
+                            color: $card-color-4
+                        .card-title-color-5
+                            color: $card-color-5
+                        .card-title-color-6
+                            color: $card-color-6
+                    .text 
+                        width: 150px
+                        p
+                            font-weight: 300
+                            font-family: lato, sans-serif
+                            color: $principal-color
+                            line-height: 20px
+                            text-align: left
+                            font-size: 15px
+                    .background-circle
+                        position: relative
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        background-color: #C8DD99
+                        border-radius: 50%
+                        width: 126px
+                        height: 126px 
+                        margin-bottom: 20px               
+                    .card-circule-1
+                        background-color: $card-color-1        
+                    .card-circule-2
+                        background-color: $card-color-2
+                    .card-circule-3
+                        background-color: $card-color-3
+                    .card-circule-4
+                        background-color: $card-color-4
+                    .card-circule-5
+                        background-color: $card-color-5
+                    .card-circule-6
+                        background-color: $card-color-6                
+    .section-why-plant
+        // display: none
+        position: relative
+        align-items: center
+        flex-direction: column
+        height: auto
+        margin-bottom: 50px
+        .s-header
+            h1
+                line-height: 33px
+                color: $principal-color
+                text-align: center
+                font-weight: 900
+                text-transform: uppercase
+                margin-bottom: 40px
+                font-size: 30px
+            span
+                color: $green-color
+        .row
+            display: flex
+            justify-content: space-evenly
+            width: 100%
+            height: 100%
+            .decoration-line
+                height: auto
+                width: 5px
+                background: $green-color                
+                margin-left: 40px
+                margin-right: 80px
+            display: flex
+            .plant-header
+                font-weight: 900
+                text-align: center
+                text-transform: uppercase
+                font-size: 25px
+                color: $principal-color
+                margin-bottom: 30px
+            .text
+                position: relative                
+                font-weight: 300;
+                font-family: lato, sans-serif;
+                color: $principal-color
+                font-size: 23px
+                width: 339px
+                margin-bottom: 30px
+                text-align: left
+                &:last-of-type                             
+                    margin-bottom: 0px
+                list-style: none
+                &::before
+                    position: absolute
+                    font-size: 33px
+                    top: -8px
+                    content: '•'
+                p 
+                    margin-left: 25px !important
+                    width: 100%
+            .clonal-content, .conventional-content
+                width: 400px 
+                padding: 0 5px    
+                .text
+                    p
+                        margin-left: 5px
+            .clonal-content                    
+    .section-vistus
+        // display: none
+        position: relative
+        width: 100%
+        height: auto
+        .background-image
+            z-index: 100
+            width: 100%
+            height: 100%
+            img 
+                width: 100%
+                height: 100%
+        .content
+            position: absolute
+            display: flex
+            flex-direction: column
+            align-items: center      
+            top: 0
+            left: 0
+            z-index: 200
+            width: 100%
+            height: 100%
+            background-color: rgba(0, 0, 0, .4)
+            .header
+                position: relative
+                margin-top: 40px
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 630px !important
+                height: auto
+                font-weight: 900
+                text-shadow: 6px 6px 8px rgba(0, 0, 0, .8)
+                h1
+                    width: auto
+                    font-weight: 900
+                    text-align: center
+                    text-transform: uppercase
+                    // text-shadow: 6px 6px 8px rgb(0 0 0 / 50%)
+                    color: #fff
+                    font-size: 58px
+                    line-height: 55px
+                    margin-bottom: 20px
+                .text 
+                    width: 440px
+                    color: #fff
+                    font-size: 23px
+                    line-height: 32px
+                    font-weight: 500
+                    text-align: center
+                    text-shadow: 6px 6px 8px rgba(0, 0, 0, .8)
+                    opacity: 1
+            .content-form
+                margin-top: 40px
+                // background-color: blue
+                // display: none
+                width: 520px
+                height: auto !important
+                position: relative
+                .form-header
+                    h1
+                        color: #fff
+                        text-transform: uppercase  
+                        text-align: center 
+                        font-size: 23px
+                        line-height: 22px
+                        font-weight: 500
+                    margin-bottom: 20px
+                .form
+                    margin-bottom: 10px
+                    .btn 
+                        background-color: rgba(255,255 ,255 , .1)
+                    // background-color: red
+                    .form-row
+                        .form-control
+                            // background-color: pink
+                                       
+    .section-upcoming
+        // display: none
+        position: relative
+        width: 100%
+        height: 780px
+        // background-color: pink
+        .background-image  
+            position: absolute
+            right: 0 
+            width: 70%
+            height: 780px
+            img
+                width: 100%
+                height: 100%
+        .degraded
+            background: linear-gradient(to right,#66913D 34%,rgba(255,255,255,0) )
+            position: absolute
+            width: 100%
+            height: 100%
+            left: 0%
+            top: 0
+            margin-left: 0%
+        .content
+            // background-color: red
+            display: flex
+            flex-direction: column
+            position: absolute
+            left: 10%
+            margin-top: 70px
+            // top: 0
+            width: 800px
+            height: 700px
+            .content-header 
+                position: relative
+                width: 700px
+                h1 
+                    color: #fff
+                    text-align: left
+                    font-size: 36px
+                    line-height: 37px
+                    font-weight: 500
+                    text-transform: uppercase
+                    font-weight: 900
+                    text-shadow: 6px 6px 8px rgba(0, 0, 0, .8)
+            .content-form
+                margin-top: 50px
+                position: relative
+                width: 500px
+                height: auto
+                .form-header
+                    width: 400px
+                    margin-bottom: 50px
+                    h1 
+                        color: #fff
+                        font-size: 23px
+                        line-height: 30px                   
+                        font-weight: 500                
+    .section-footer
+        width: 100%          
+.form-control
+    position: relative
+    width: 85%
+    label
+        display: none
+        position: absolute
+        color: #fff
+        font-style: italic
+        font-family: lato, sans-serif
+        font-weight: 300
+        // padding: 6px
+        font-size: 16px 
+        bottom: 50%
+    label.focus
+        display: none
+        top: -20%
+        font-weight: 900
+    input
+        margin-bottom: 20px
+        height: 35px
+        width: 100%
+        border: none
+        border-bottom: 1px solid #fff
+        background: none     
+        color: #fff 
+        outline: none 
+        box-sizing: border-box
+        padding-left: 10px    
+        &:focus
+            border: 1px solid gray
+            background: #fff  
+            color: #000
+        &::placeholder
+            display: none
+            color: #fff
+            font-style: italic
+            font-family: lato, sans-serif
+            font-weight: 300
+            padding: 6px
+            font-size: 16px    
+            opacity: 1  
+.btn-primary
+    height: 35px
+    width: 150px
+    color: #fff
+    background: none
+    border: 1px solid #fff
+    &:hover
+        background-color: rgba(255, 255, 255,1 ) !important
+        opacity: 1
+        color: #000
+        cursor: pointer
+.btn-large
+
+.form-row
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+.col-6
+    width: 49%
+
+
+.alert-message-success
+    visibility: hidden
+    color: #fff
+    font-weight: 300
+    font-family: lato, sans-serif
+    width: 100%
+    font-size: 17px
+    margin-top: 10px 
+.alert-message-success.active 
+    visibility: visible
+    transition: .3s ease
+
+
+
+//? Responsive 
+//* Phone Devices              
+@media (max-width: $smallScreen) 
+    .section-header
+        height: 300px !important
+        width: 100% !important
+        .background-image
+            height: 300px
+            width: 100%
+            img
+                width: 100%
+                height: 100%
+        .content
+            height: 100%
+            h1 
+                font-size: 35px !important
+    .section-nursery
+        width: 100%
+        flex-direction: column
+        .image
+            display: flex
+            justify-content: center
+            width: 100% !important
+            height: 300px
+            img 
+                border-radius: 200px 0px 200px 0px !important
+                width: 95%
+                height: 300px
+        .content
+            width: 100%
+            margin-left: 0 !important
+            box-sizing: border-box
+            padding: 0px 7px
+            .header
+                width: 100%
+                h1 
+                    width: 100%  
+                margin-bottom: 20px      
+            .text 
+                width: auto !important
+                p 
+                    width: auto !important
+    .section-why-nursery
+        width: 100% !important
+        height: auto !important
+        .why-content
+            .cards
+                flex-wrap: wrap
+                &:last-child
+                    margin-bottom: 40px
+    .section-why-plant
+        width: 100% !important
+        .row 
+            display: flex 
+            flex-direction: column
+            width: 100% !important
+            .clonal-content
+                margin-bottom: 40px
+                // background: pink !important                
+            .clonal-content, .convetional-content 
+                width: 100% !important
+            .text 
+                margin-left: 20px
+    .section-vistus    
+        width: 100% !important
+        height: auto !important
+        .background-image
+            width: 100%  !important
+            height: 300px !important
+            background-color: red
+            img 
+        .header
+            h1 
+                font-size: 40px !important
+                width: 60% !important
+            .text
+                width: 60% !important
+        .content
+            background-color: $principal-color
+            position: relative !important 
+            padding-bottom: 20px
+            .content-form
+                width: 90% !important
+                box-sizing: border-box
+                padding: 0px 10px
+                .form
+                    .form-row
+                        display: flex
+                        flex-wrap: wrap
+                        .form-control
+                            width: 100% 
+                    button
+                        margin-left: 5%
+                        width: 90%
+    .section-upcoming
+        display: flex !important
+        flex-direction: column !important
+        width: 100% !important
+        height: auto !important
+        .background-image
+            position: relative !important 
+            background: pink !important
+            width: 100% !important
+            height: 300px !important
+            img     
+        .degraded 
+            width: 100% !important
+            height: 300px !important
+        .content  
+            background-color: $principal-color
+            left: 0 !important
+            margin-top: 0 !important
+            width: 100% !important
+            height: auto !important
+            padding: 30px 0px
+            position: relative !important
+            .content-header
+                width: 100% !important
+                h1
+                    width: 100% !important
+                    text-align: center !important
+                    font-size: 30px !important
+            .content-form
+                width: 100% !important
+                .form-header
+                    margin-left: 4%
+                form
+                    box-sizing: border-box
+                    padding: 0px 30px
+                    .form-control 
+                        width: 100% !important
+                    button
+                        width: 100%
+@media (max-width: $tabletScreen) and (min-width: 700px)
+    .container
+        .section-header
+            height: 500px !important   
+            .background-image
+                height: 100%
+                img 
+                    height: 100%        
+        .section-nursery
+            display: flex
+            align-items: center
+            width: 100%            
+            .image
+                width: 50% !important
+                img
+                    margin-left: 10px
+                    width: 100% !important 
+                    height: 100% !important
+                    border-radius: 200px 0px 250px 0px !important
+            .content 
+                width: 50% !important
+                .header
+                    h1 
+                .text 
+                    width: auto
+                        // width: 100% !important
+        .section-why-nursery
+            width: 99%
+            .row 
+                .clonal-content
+        .section-why-plant
+            width: 100%
+            .row
+                .clonal-content 
+                .coventional.content
+        .section-vistus
+            height: 600px !important
+            .background-image
+                height: 100%
+            .content
+                height: 100%
+        .section-upcoming
+            height: 600px !important
+            .background-image
+                height: 100%
+                img 
+                    height: 100%
+            .content
+                height: auto
+@media (max-width: $desktopScreen) and (min-width: 1025px)
+    .section-header
+        height: 100vh
+        .background-image
+            height: 100%
+            img 
+                height: 100%
+    .section-nursery
+        .content
+            .header
+                width: 350px
+            .text
+                width: 500px
+    .section-why-nursery
+        // background-color: red
+        width: 85% !important
+    .section-why-plant
+        .row
+            // background-color: blue !important
+            .decoration-line
+                margin-left: 40px
+                margin-right: 80px
+@media (min-width: 1367px)
+    .section-header
+        .background-image
+            height: 100%
+            img 
+                height: 100%
+    .section-nursery
+        .content
+            .header
+                // background-color: red !important
+            .text
+                width: 500px

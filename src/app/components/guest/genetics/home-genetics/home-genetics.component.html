@@ -1,0 +1,62 @@
+<div class="container"  @enterState>
+        <!-- Navbar Start  -->
+        <div class="header">
+            <app-navbar></app-navbar>
+            <!-- <app-navbar-nursery [actualPage]="actualPage"></app-navbar-nursery> -->
+        </div>
+        <!-- Navbar End  -->
+    <!--* Section Header Start -->
+    <div class="section-header">
+        <div class="background-image"><img src="assets/images/_cfr7208-crop-u46444.jpg?crc=3969550163" alt=""></div>    
+        <div class="content">
+            <h1 class="title-header">WORLD CLASS GENETICS FOR MEXICAN AGRICULTURE</h1>
+            <!-- <h1 class="sub-header">¡YA DISPONIBLE!</h1> -->
+        </div>
+    </div>
+   <!--* Section Header End  -->
+    <!--* Section Cutting Start  -->
+    <div class="section-cutting">
+        <div class="content">
+            <div class="image-content">
+                <div class="image-decoration"></div>
+                <img src="assets/images/e696f1de-eb13-43f1-a234-a19852157dc4.jpg?crc=3828256349" alt="">              
+            </div>
+            <div class="info-content">
+                <h1 class="title-content">CUTTING EDGE <span class="second-color-text">TECHNOLOGY AND GENETICS</span></h1>
+                <div class="text-content">
+                    <p>
+                        We make the best genetics in the world available to Mexican agricultural producers by  continuously searching worldwide for the best varieties to increase Mexican agroforestry quality and productivity.  
+                    </p>
+                    <p>Following optimal production standards, BlueDrop Genetics conducts trials of different crop varieties to select those seeds best suited for Mexico’s microclimates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--* Section Cutting End  -->
+    <!-- Section Research Start  -->
+    <div class="section-research">
+        <h1 class="title-section">
+            WE ARE IN THE PROCESS OF <span class="second-color-text">RESEARCH AND DEVELOPMENT</span> OF DIFFERENT VARIETIES.
+        </h1>
+        <div class="carousel-content">
+            <!-- <div>Some tags before</div> -->
+            <owl-carousel-o class="carousel" [options]="customOptions">
+              <ng-template class="images" carouselSlide>
+                  <img class="carousel-image" src="assets/images/_cfr7369-crop-u46600.jpg?crc=4213187444" alt="">
+              </ng-template>  
+              <ng-template carouselSlide>
+                  <img class="carousel-image" src="assets/images/img_9006-crop-u46805.jpg?crc=3980809093" alt="">
+              </ng-template>              
+              <ng-template carouselSlide>
+                  <img class="carousel-image" src="assets/images/teak%20house%20tabasco%20050918_027.jpg?crc=4098039888" alt="">
+              </ng-template>  
+              <ng-template carouselSlide>
+                  <img class="carousel-image" src="assets/images/teak%20house%20tabasco%20050918_053.jpg?crc=3908189283" alt="">
+              </ng-template>              
+            </owl-carousel-o>
+            <!-- <div>Some tags after</div> -->
+        </div>
+    </div>
+    <!-- Section Research End -->
+    <app-footer-guest></app-footer-guest>
+</div>

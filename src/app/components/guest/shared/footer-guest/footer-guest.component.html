@@ -1,0 +1,42 @@
+<footer class="footer">
+    <div class="content">
+        <div class="content-email">
+            <h1>Write us!</h1>
+            <div class="email-form">
+                <form [formGroup]="formEmail" (ngSubmit)="sendMail(formEmail)">
+                    <div class="row row-1">
+                        <div class="form-control">
+                            <input type="text" name="name" id="name" placeholder="Name:" required   formControlName="name">
+                        </div>
+                        <div class="form-control">
+                            <input type="email" name="email" id="email" placeholder="Email:" required   formControlName="email">
+                        </div>
+                    </div>
+                    <div class="row row-2">
+                        <div class="form-control">
+                            <textarea name="message" id="" cols="50" rows="6" placeholder="Message:" required formControlName="message"></textarea>
+                        </div>
+                    </div>
+                    <button class="btn">Send</button>
+                </form>
+            </div>
+            <span class="alert-message-success" [ngClass]="isEmailSend ? 'active': 'nan'"><i class="fas fa-check-circle"></i> Your message was sent successfully. Thanks! </span>
+        </div>
+        <div class="social-network">
+            <div class="bluedrop-logo">
+                <img src="assets/images/svg-pegado-5504x150.svg" alt="Error">
+            </div>
+            <ul>
+                <li><a href="http://www.facebook.com/bluedropmexico"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="http://www.instagram.com/bluedropmx/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="http://www.linkedin.com/company/bluedrop---sustainable-agroforestry"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="http://"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+            <a href="mailto:contact@bluedropmx.com" class="email-link">contact@bluedropmx.com</a>
+            <a href="assets/pdf/Aviso de Privacidad Grupo.pdf"  target="_blank" class="privacy-link">Privacy Notice</a>
+        </div>
+    </div>
+    <div class="designed">
+        <p>BlueDrop 2022 © All rights reserved. Designed by BlueDrop®</p>
+    </div>
+</footer>

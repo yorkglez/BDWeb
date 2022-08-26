@@ -1,0 +1,137 @@
+$smallScreen: 500px 
+$tabletScreen: 952px
+$desktopScreen: 1366px
+$LargeDesktopScreen: 1920px
+$second-color: #71A3D8
+.second-color-text
+    color: $second-color
+.section-header
+    position: relative
+    width: 100%
+    margin-bottom: 50px
+    .background-image
+        width: 100%
+        img
+            width: 100%
+    .content
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        position: absolute 
+        top: 0
+        left: 10%
+        width: auto
+        height: 100%
+        .title-header
+            text-align: left
+            text-transform: uppercase
+            color: #fff
+            font-size: 64px
+            line-height: 51px
+            font-weight: 900
+            text-shadow: 6px 6px 8px rgba(0, 0, 0, .8)
+            width: 600px
+        .sub-header
+            font-size: 54px
+            height: auto
+            color: #fff
+            font-weight: 900
+            text-shadow: 6px 6px 8px rgba(0, 0, 0, .8)
+.section-bringing   
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    .title-section  
+        font-size: 30px
+        line-height: 33px
+        font-weight: 900
+        width: 620px
+        text-align: center
+        margin-bottom: 50px
+    .content
+        width: 550px
+        p 
+            font-size: 22px
+            line-height: 26px
+            text-align: center
+.section-certifications
+    width: 100%
+    display: flex
+    align-items: center
+    flex-direction: column
+    margin-bottom: 30px
+    .title-section
+        text-transform: uppercase
+        font-size: 27px
+        font-weight: 700
+        line-height: 38px
+        margin-bottom: 20px
+    .cards
+        position: relative
+        width: 28%
+        height: auto
+        display: flex
+        flex-direction: row
+        justify-content: space-evenly
+        align-items: center
+        .card 
+            position: relative
+            display: flex
+            flex-direction: column
+            align-items: center
+//? Responsive 
+//* Phone Devices              
+@media (max-width: $smallScreen)
+    .section-header
+        height: 300px
+        .content
+            left: 2%
+            top: 5%
+            width: 100%
+            .title-header
+                width: 100%
+                font-size: 40px
+        .background-image
+            height: 100%
+            img
+                height: 100%
+    .section-bringing
+        width: 100%
+        .title-section
+            width: 100%
+        .content
+            width: 100%
+            p
+                width: 100%
+        .image-section
+            width: 100%
+            img 
+                width: 100%
+    .section-certifications
+        width: 100%
+        .title-section
+            width: 100%
+            text-align: center
+        .cards
+            flex-wrap: wrap
+@media (max-width: $tabletScreen) and (min-width: 700px)
+    .section-header
+        .content
+            width: 450px
+            left: 2%  
+            .title-header
+                width: 100%
+                font-size: 47px
+    .section-bringing
+        width: 100%
+        .image-section
+            width: 100%
+            img 
+                width: 100%
+@media (max-width: $desktopScreen) and (min-width: 1025px)
+    .section-header
+        .content
+          left: 2%  

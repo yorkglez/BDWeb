@@ -1,0 +1,323 @@
+
+$principal-color: #173853
+$clonal-title-color: #71A3D8
+$green-color: #A2BF49
+$smallScreen: 500px 
+$tabletScreen: 952px
+$desktopScreen: 1200px
+$LargeDesktopScreen: 1920px
+.container
+    font-family: lato, sans-serif
+    width:  100%
+    height: auto
+    display: flex
+    align-items: center
+    flex-direction: column
+    .header
+        // display: none
+        width: 100%
+        height: 85px
+    .section-header
+        position: relative
+        width: 100%
+        margin-bottom: 50px
+        .background-image
+            width: 100%
+            img 
+                // display: none
+                width: 100%
+        .content
+            // background: red
+            display: flex
+            // justify-content: center
+            flex-direction: column
+            align-items: center
+            position: absolute 
+            top: 0
+            width: 100%
+            height: 100%
+            background-color: none
+            .title-header
+                // width: 800px
+                // height: auto
+                text-align: center
+                color: #fff
+                font-size: 40px
+                line-height: 51px
+                // margin-top: 120px
+                // margin-bottom: 20px
+                font-weight: 900
+                text-shadow: 6px 6px 8px rgba(0, 0, 0, .8)
+            .sub-header
+                font-size: 54px
+                height: auto
+                color: #fff
+                font-weight: 900
+                text-shadow: 6px 6px 8px rgba(0, 0, 0, .8)
+    .section-conventional
+        .cards-header      
+            h1 
+                color: $green-color
+        .cards  
+            .cards-header-2line              
+                h1 
+                    color: $green-color      
+            .card-header            
+                h1
+                    color: $green-color
+            .cards-header
+                h1
+                    color: $green-color
+            .card
+                .card-header
+                    .card-titles                        
+                        .card-title
+                            color: $green-color
+        margin-bottom: 35px
+    // Seticon Clonal Start 
+    .section-clonal
+        .cards-header
+            h1 
+                color: $clonal-title-color
+        .cards
+            .cards-header-2line              
+                h1 
+                    color: $clonal-title-color                 
+            .row 
+                .card                  
+                    .card-header
+                        h1 
+                            color: $clonal-title-color
+                           
+    //Section Clonal End
+    .section-footer
+        margin-top: 50px
+        width: 100%   
+
+    .section-products
+        position: relative
+        width: 100%
+        height: auto
+        display: flex
+        align-items: center
+        flex-direction: column
+        .content-header
+            position: relative
+            top: 0
+            h1
+                color: $principal-color
+                text-transform: uppercase
+                font-size: 45px
+                line-height: 49px
+                font-weight: 900
+        .cards-header  
+            margin-top: 50px 
+            margin-bottom: 50px
+            h1 
+                // color: $green-color
+                text-transform: uppercase
+                font-size: 30px
+                line-height: 33px
+                font-weight: 900
+        .cards        
+            position: relative
+            display: flex
+            align-items: center
+            flex-direction: column
+            width: 100%
+            .cards-header-2line
+                margin-bottom: 30px
+                h1                 
+                    text-transform: uppercase
+                    font-size: 30px
+                    font-weight: 900
+            .card-header              
+                h1               
+                    text-transform: uppercase
+                    font-size: 30px
+                    line-height: 33px
+                    font-weight: 900
+            .row-1
+                margin-bottom: 50px
+            .row-2 
+                .card
+                    height: auto
+                    .card-header
+                        width: 256px
+                margin-bottom: 40px        
+            .row 
+                display: flex
+                justify-content: space-evenly
+                align-items: center
+                flex-direction: row
+                flex-wrap: wrap
+            .cards-header
+                h1                 
+                    text-transform: uppercase
+                    font-size: 30px
+                    line-height: 33px
+                    font-weight: 900
+            .card
+                position: relative
+                width: 280px
+                height: 490px
+                .short-card
+                    width: 220px
+                .card-image
+                    position: absolute
+                    top: 0
+                .card-header
+                    position: relative                   
+                    height: 350px
+                    .card-image        
+                        width: 243px
+                        position: relative
+                        left: 15px
+                    .card-titles
+                        position: absolute
+                        bottom: 0
+                        display: flex
+                        flex-direction: column
+                        justify-content: flex-end
+                        width: 100%
+                        height: 237px
+                        background-color: #EAEAEA
+                        padding: 10px
+                        box-sizing: border-box
+                        box-shadow: 1px 1px 6px rgba(0, 0, 0, .2)                 
+                        margin-bottom: 10px
+                        .card-title
+                            width: 265px
+                            font-size: 26px
+                            font-weight: 900
+                            line-height: 31px
+                        .card-subtitle           
+                            width: 250px         
+                            font-size: 22px
+                            line-height: 26px
+                            font-weight: 500
+                            color: $principal-color
+                .card-text
+                    position: relative
+                    width: 230px
+                    margin-left: 15px
+                    p
+                        color: $principal-color
+                        line-height: 20px
+                        font-weight: 500
+                .card-price
+                    margin-top: 25px
+                    margin-left: 15px
+                    h1
+                        color: $principal-color
+                        font-size: 30px
+                        font-weight: 900
+                        line-height: 36px
+                .more-information
+                    position: absolute
+                    left: 15%
+                    // right: -70px
+                    bottom: 5px
+                    width: 180px
+                    height: 40px
+                    border-radius: 100px
+                    background-color: $principal-color
+                    a
+                        // background-color: red
+                        width: 100%
+                        height: 100%
+                        text-decoration: none
+                        display: inline-block
+                        color: #fff
+                        font-size: 21px
+                        font-weight: 500
+                        text-align: center
+                        line-height: 40px
+                        margin: 0 auto
+                        padding: 0
+
+    .btn
+        width: 295px
+        height: 40px
+        background-color: $principal-color
+        color: #fff
+        font-size: 31px
+        font-weight: 500
+        line-height: 37px
+        border-radius: 100px
+        border-width: 0px
+        border-style: solid
+        border-color: transparent
+
+//? Responsive 
+//* Phone Devices 
+@media (max-width: $smallScreen)
+    .section-header
+        height: 300px
+        .background-image
+            height: 100%
+            img 
+                height: 100%
+        .content
+            width: 100% !important
+            // background-color: tomato
+            height: 100% !important
+            .title-header
+                height: auto !important
+                width: 100%
+                margin-top: 0 !important
+                line-height: 31px !important
+                font-size: 35px !important
+                margin-bottom: 0 !important
+                margin-top: 10%  !important
+            .sub-header
+                font-size: 45px !important
+                width: 100% !important
+                // color: red !important    // display: none
+    .section-products
+        width: 100%
+        .content-header
+            left: 0 
+            padding-left: 5%
+        .cards
+            .row 
+                flex-wrap: wrap
+                .card
+                    margin-bottom: 5%
+                    .more-information
+                        left: 15%
+@media (max-width: $tabletScreen) and (min-width: 821px)
+    .section-products
+        .row 
+            width: 70%
+            .card
+                margin-bottom: 20px       
+@media (max-width: $desktopScreen) and (min-width: 1025px)
+    .section-header
+        .content
+            .title-header
+                margin-top: 50px
+                width: 800px
+    .section-products
+        .row-1
+            width: 100% !important
+@media (min-width: 1201px) 
+    .section-header    
+        height: 700px !important
+        width: 100% !important
+        .background-image
+            height: 100%
+            img 
+                height: 100%
+        .content
+            .title-header
+                margin-top: 5%
+                width: 800px
+            .sub-header
+    .section-products    
+        .content-header
+            left: -25%
+        .row-1 
+            width: 100% 
+        .row-2
+            width: 50% 

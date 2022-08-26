@@ -1,0 +1,19 @@
+<div class="content">
+    <div class="section-welcome">
+        <div class="image-logo" >
+            <img src="assets/images/svg%20pegado%20550837x150_poster_.png?crc=439807837" @enterState (@enterState.done)="animationDone($event)">
+        </div>
+        <div class="enter-button">
+            <button routerLink="/home"  @enterSecondState *ngIf="isShow">enter</button>
+        </div>
+        <div class="social-network">
+            <ul @enterSecondState *ngIf="isShow">
+                <li><a href="https://www.facebook.com/bluedropmexico"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/bluedropmx/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/bluedrop---sustainable-agroforestry"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+            <a routerLink="/contactus" class="contactus-link"  @enterSecondState *ngIf="isShow">Contact us >></a>
+        </div>
+      
+    </div>
+</div>

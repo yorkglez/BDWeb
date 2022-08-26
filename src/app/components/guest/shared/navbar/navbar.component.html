@@ -1,0 +1,27 @@
+<div class="nav-container">
+    <nav class="nav">
+        <div class="nav-logo">
+            <a routerLink="/home">
+                <img class="" src="assets/images/svg-pegado-5504x150.svg?crc=4092171756" alt="">
+            </a>
+        </div>
+        <ul class="nav-menu" [class.show]="isShowMenu">               
+            <li class="nav-item"><a routerLink="/aboutus">ABOUT US</a></li>
+            <!-- <li class="nav-item"><a  (click)="gotoCompanies()" routerLink="/home#companies">COMPANIES</a></li> -->
+            <li class="nav-item">
+                <a  (click)="gotoCompanies()">COMPANIES</a>
+                <ul class="nav-drop">
+                    <li><a routerLink="/berries">Berries</a></li>
+                    <li><a routerLink="/genetics">Genetics</a></li>
+                    <li><a routerLink="/nursery">Nursery</a></li>
+                    <li><a routerLink="/produce">Produce</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link"  routerLink="/sustainability">SUSTAINABILITY</a></li>
+            <li class="nav-item"><a class="nav-link"  routerLink="/contactus"> contact us</a></li>
+        </ul>
+        <span class="btn-menu" (click) = "showMenu()">
+            <i class="fa fa-bars"></i>
+        </span>                  
+    </nav>               
+</div>

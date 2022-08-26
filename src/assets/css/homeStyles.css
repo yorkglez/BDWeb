@@ -1,0 +1,33 @@
+.content .leading-content .leading-banner .leading-banner-text {
+  position: relative;
+  height: 229px;
+  width: 609px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+  opacity: .9;
+  border-radius: 20px;
+  margin-top: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content .leading-content .leading-banner .leading-banner-text p {
+  position: relative;
+  text-align: center;
+  font-family: lato, sans-serif;
+  color: #173853;
+  font-weight: 500;
+  width: 506px;
+  min-height: 159px;
+  line-height: 26px;
+  font-size: 22px;
+}
+/*# sourceMappingURL=homeStyles.css.map */

@@ -1,0 +1,560 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "__Lemon Bird_5";
+  font-family-src: url("../fonts/lemonbird-regular-webfont.eot");
+  font-family-src: local("☺"), url("../fonts/lemonbird-regular-webfont.woff") format("woff"), url("../fonts/lemonbird-regular-webfont.svg") format("svg");
+  font-family-font-weight: 400;
+  font-family-font-style: normal;
+}
+
+.header {
+  height: 85px;
+}
+
+.section-header {
+  display: none;
+  width: 100%;
+  height: 500px;
+}
+
+.section-header video {
+  width: 100%;
+  height: 100%;
+}
+
+.section-revolution {
+  margin-top: 25px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-revolution .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+.section-revolution .content .content-title {
+  width: 570px;
+  line-height: 65px;
+  text-align: center;
+  font-size: 80px;
+  font-family: '__Lemon Bird_5';
+  font-weight: 400;
+  color: #243065;
+  margin-bottom: 25px;
+}
+
+.section-revolution .content .content-title span {
+  color: #B90C4A;
+}
+
+.section-revolution .content .content-text {
+  width: 683px;
+}
+
+.section-revolution .content .content-text p {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.section-revolution .content .content-text p:first-of-type {
+  margin-bottom: 40px;
+}
+
+.section-revolution .left-image {
+  width: 293px;
+}
+
+.section-revolution .left-image img {
+  width: 100%;
+}
+
+.section-revolution .right-image {
+  width: 310px;
+}
+
+.section-revolution .right-image img {
+  width: 100%;
+}
+
+.section-how {
+  position: relative;
+  width: 100%;
+}
+
+.section-how .image-background {
+  z-index: 100;
+  width: 100%;
+}
+
+.section-how .image-background img {
+  width: 100%;
+}
+
+.section-how .content {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-how .content .content-text {
+  height: 500px;
+  position: relative;
+  top: 20%;
+  left: -15%;
+}
+
+.section-how .content .content-text p {
+  color: #fff;
+  text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+  font-family: lato, sans-seri;
+  font-weight: 500;
+  text-align: center;
+  line-height: 44px;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.section-growmap {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-growmap .content-title {
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+
+.section-growmap .content-title h1 {
+  line-height: 65px;
+  text-align: center;
+  font-size: 80px;
+  color: #243065;
+  font-family: '__Lemon Bird_5';
+  font-weight: 400;
+  color: #243065;
+  text-transform: uppercase;
+}
+
+.section-growmap .content-title h1 span {
+  color: #B90C4A;
+}
+
+.section-growmap .content {
+  height: auto;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.section-growmap .content .route-image {
+  width: 858px;
+  height: 447px;
+}
+
+.section-growmap .content .route-image img {
+  width: 100%;
+}
+
+.section-growmap .content .cards {
+  position: absolute;
+}
+
+.section-growmap .content .cards .card {
+  width: 180px;
+  height: 180px;
+}
+
+.section-growmap .content .cards .card .card-title {
+  line-height: 41px;
+  text-align: center;
+  font-size: 50px;
+  font-family: '__Lemon Bird_5';
+  font-weight: 400;
+}
+
+.section-growmap .content .cards .card .card-image {
+  width: 170px;
+  height: 170px;
+  border: 8px solid #243065;
+  border-radius: 50%;
+}
+
+.section-growmap .content .cards .card .card-image img {
+  border-radius: 50%;
+}
+
+.section-growmap .content .cards .card-plant {
+  position: relative;
+  left: -40%;
+}
+
+.section-growmap .content .cards .card-labors {
+  position: absolute;
+  left: 17%;
+  bottom: -160%;
+}
+
+.section-growmap .content .cards .card-nutrition {
+  position: absolute;
+  left: 130%;
+  top: -35%;
+}
+
+.section-growmap .content .cards .card-growth {
+  position: absolute;
+  left: 246%;
+  bottom: -160%;
+}
+
+.section-growmap .content .cards .card-harvest {
+  position: absolute;
+  left: 356%;
+  top: -40%;
+}
+
+.section-growmap .content .cards .card-pruning {
+  position: absolute;
+  left: 420%;
+  bottom: -130%;
+}
+
+.section-growmap .corner-image {
+  width: 100%;
+  position: relative;
+  left: 0;
+}
+
+.section-ourpeople {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-ourpeople .image-background {
+  width: 100%;
+}
+
+.section-ourpeople .image-background img {
+  width: 100%;
+}
+
+.section-ourpeople .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 5%;
+}
+
+.section-ourpeople .content .section-title {
+  width: 555px;
+}
+
+.section-ourpeople .content .section-title h1 {
+  text-align: center;
+  font-size: 80px;
+  line-height: 72px;
+  font-weight: 400;
+  font-family: '__Lemon Bird_5';
+}
+
+.section-ourpeople .content .section-title h1 span {
+  color: #B90C4A;
+}
+
+.section-ourpeople .content .section-subtitle h1 {
+  text-transform: uppercase;
+  font-size: 39px;
+  line-height: 35px;
+  font-weight: 900;
+}
+
+.section-ourpeople .content .btn {
+  margin-top: 25px;
+  font-size: 24px;
+  color: #fff;
+  border: none;
+  border: 1px solid #fff;
+  width: 280px;
+  height: 50px;
+  background: none;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section-ourpeople .content .btn:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.section-choose {
+  width: 100%;
+  padding-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-choose .content-title {
+  margin-top: 30px;
+  font-size: 80px;
+  font-weight: 400;
+  color: #243065;
+  font-family: '__Lemon Bird_5';
+  line-height: 65px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-choose .cards {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+}
+
+.section-choose .cards .card {
+  width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  bottom: 0;
+}
+
+.section-choose .cards .card .card-title {
+  font-family: '__Lemon Bird_5';
+  line-height: 41px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.section-followus {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.section-followus .section-title {
+  font-family: '__Lemon Bird_5';
+  line-height: 41px;
+  font-size: 80px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.color-red {
+  color: #B90C4A;
+}
+
+@media (max-width: 520px) {
+  .section-revolution {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 15px !important;
+  }
+  .section-revolution .content {
+    width: 100%;
+  }
+  .section-revolution .content .content-title {
+    font-size: 60px;
+    width: 100%;
+  }
+  .section-revolution .content .content-text {
+    width: 100%;
+  }
+  .section-revolution .left-image {
+    display: none;
+  }
+  .section-revolution .right-image {
+    display: none;
+  }
+  .section-how {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 700px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .section-how .image-background {
+    width: 100%;
+    height: 250px !important;
+  }
+  .section-how .image-background img {
+    width: 100%;
+    height: 100%;
+  }
+  .section-how .content {
+    position: relative !important;
+    width: 100%;
+    background: #173853;
+    height: auto !important;
+    padding-top: 15px;
+  }
+  .section-how .content .content-text {
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    width: 100% !important;
+  }
+  .section-how .content .content-text p {
+    margin-bottom: 35px;
+  }
+  .section-ourpeople {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .section-ourpeople .image-background {
+    width: 100%;
+    height: 250px;
+  }
+  .section-ourpeople .image-background img {
+    width: 100%;
+    height: 100%;
+  }
+  .section-ourpeople .content {
+    position: relative;
+  }
+  .section-ourpeople .content .section-title {
+    width: 100%;
+  }
+  .section-ourpeople .content .section-title h1 {
+    font-size: 70px;
+    line-height: 65px;
+  }
+  .section-ourpeople .content .section-subtitle {
+    width: 100%;
+  }
+  .section-ourpeople .content .section-subtitle h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .section-ourpeople .content .btn {
+    background-color: #173853;
+  }
+  .section-ourpeople .content .btn:hover {
+    background-color: #173353;
+    color: #fff;
+  }
+  .section-choose .cards {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section-growmap {
+    display: none;
+  }
+}
+
+@media (max-width: 952px) and (min-width: 821px) {
+  .section-growmap .content {
+    width: 85%;
+  }
+  .section-growmap .content .route-image {
+    width: 100%;
+  }
+  .section-growmap .content .cards .card .card-image {
+    height: 140px !important;
+    width: 140px !important;
+  }
+  .section-growmap .content .cards .card .card-image img {
+    width: 100%;
+  }
+  .section-growmap .content .cards .card-plant {
+    left: -30%;
+  }
+  .section-growmap .content .cards .card-pruning {
+    left: 395% !important;
+  }
+  .section-growmap .corner-image img {
+    width: 357px;
+  }
+}
+/*# sourceMappingURL=berries-homeStyles.css.map */

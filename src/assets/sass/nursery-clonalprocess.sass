@@ -1,0 +1,491 @@
+$principal-color: #173853
+$green-color: #A2BF49
+$smallScreen: 500px 
+$tabletScreen: 952px
+$desktopScreen: 1200px
+$LargeDesktopScreen: 1201px
+.container
+    font-family: lato, sans-serif
+    width:  100%
+    height: auto
+    display: flex
+    align-items: center
+    flex-direction: column
+    .header
+        width: 100% !important
+        height: 85px
+    .section-header
+        position: relative
+        width: 100%
+        height: 790px
+        margin-bottom: 80px
+        .background-image
+            width: 100%
+            img 
+                width: 100%
+        .content
+            display: flex
+            justify-content: center
+            position: absolute 
+            top: 0
+            width: 100%
+            height: 100%
+            background-color: none
+            .header 
+                width: 700px
+                text-align: center
+                color: #fff
+                font-size: 54px
+                line-height: 51px
+                margin-top: 120px
+                font-weight: 900
+                text-shadow: 6px 6px 8px rgba(0, 0, 0, .8)
+    .what-is
+        display: flex
+        flex-direction: row
+        width: 100%
+        height: auto
+        .content
+            .row
+            .row-1
+                .content-header
+                    width: 390px
+                    margin-bottom: 60px
+                    h1
+                        font-size: 30px
+                .content-text
+                    width: 570px
+                    p
+                        font-size: 22px
+                        margin-bottom: 25px
+            .row-2
+                padding-top: 25px
+                padding-bottom: 60px
+                height: auto
+                background: #173853
+                .content-header
+                    width: 612px
+                    margin-bottom: 35px
+                    h1
+                        color: #fff
+                .content-text
+                    li 
+                        color: #fff
+                        line-height: 32px
+                        font-size: 23px
+            .image-plant
+                display: none
+        .image
+            position: relative
+            left: -80px
+    .section-productivity
+        position: relative
+        width: 90%
+        height: auto
+        margin-top: 70px   
+        margin-bottom: 70px   
+        .content-header
+            display: flex
+            justify-content: center
+            width: 100%
+            padding-top: 30px
+            h1
+                width: 800px
+                font-size: 30px
+                text-align: center
+        .content-images
+            display: flex
+            flex-direction: column
+            position: relative      
+            .plant-image            
+                position: relative
+                .plant-img
+                    z-index: 100
+                    width: 485px
+                    height: 660px
+                .scissors-gif
+                    position: absolute
+                    z-index: 110
+                    left: 10%
+                    top: 60%
+                    width: 317px
+                    height: 60px
+                .plant-header
+                    display: flex
+                    justify-content: space-between
+                    width: 400px
+                    background: red                
+                .rotate-header
+                    transform-origin: 0 0          
+            .content
+                height: 340px
+                width: 420px
+                top: 40%
+                left: 6.4%
+                position: absolute 
+                .vertical-title-right
+                    position: absolute
+                    right: -220px
+                    bottom: 10%
+                    width: auto
+                    height: auto
+                    transform: rotate(270deg)
+                    transform-origin: 0 0 
+                    h1 
+                        text-transform: uppercase
+                        line-height:  26px
+                        font-size: 24px                   
+                        // transform: rotate(270deg)
+                        // transform-origin: 0 0 
+            .content-image  
+                height: 340px
+                width: 420px
+                .content-variety
+                    display: flex
+                    position: relative
+                    align-items: center
+                    width: 100%
+                    height: 150px
+                    margin-bottom: 40px
+                    .vertical-title
+                        position: absolute
+                        height: auto
+                        width:  auto
+                        left: 5%
+                        bottom: -10%
+                        transform: rotate(270deg)
+                        transform-origin: 0 0
+                        h1 
+                            text-transform: uppercase
+                            font-size: 24px                                                  
+                    .text
+                        position: relative
+                        left: 150px                        
+                        li 
+                            color: $principal-color
+                            font-weight: 300
+                            font-size: 17px
+                            line-height: 24px
+                .content-graft
+                    display: flex
+                    position: relative
+                    align-items: center
+                    width: 100%
+                    height: 150px
+                    .vertical-title
+                        position: absolute
+                        height: auto
+                        width:  auto
+                        left: 2%
+                        bottom: -10%
+                        transform: rotate(270deg)
+                        transform-origin: 0 0
+                        h1 
+                            width: 100px
+                            text-align: center
+                            text-transform: uppercase
+                            font-size: 24px 
+                            font-size: 24px                                                  
+                    .text
+                        position: relative
+                        left: 150px                        
+                        li 
+                            color: $principal-color
+                            font-weight: 300
+                            font-size: 17px
+                            line-height: 24px
+                .line-right-decoration
+                    position: absolute
+                    top: 0
+                    right: 0
+                    height: 100%
+                    width: 30px  
+                    border-right: $green-color 2px solid
+                    border-top: $green-color 2px solid
+                    border-bottom: $green-color 2px solid
+            .graph-image
+                background-color: $principal-color
+                width: 528px
+                height: 446px
+                position: absolute
+                right: -4%
+                bottom: 22%
+                padding: 10px
+        .decoration-margin-top-left
+            left: 0
+            top: 0     
+            border-width: 3px 0px 0px 3px   
+            border-style: solid 
+        .decoration-margin-top-right
+            right: 0
+            top: 0     
+            border-width: 3px 3px 0px 0px   
+            border-style: solid 
+        .decoration-margin-down-left          
+            left: 0
+            bottom: 0     
+            border-width: 0px 0px 3px 3px   
+            border-style: solid 
+        .decoration-margin-down-right     
+            right: 0
+            bottom: 0
+            border-width: 0px 3px 3px 0px   
+            border-style: solid     
+        .decoration-margin              
+            position: absolute
+            border-color: #A2BF49
+            height: 82px
+            width: 180px
+            z-index: 300                    
+    .section-usprocess
+        display: flex
+        align-items: center
+        flex-direction: column
+        width: 100%
+        height: auto
+        .content-header
+            width: 100%
+            height: auto
+            padding: 25px 0px
+            background: $principal-color
+            margin-bottom: 30px
+            h1
+                color: #fff
+                text-transform: uppercase
+                font-size: 40px
+                text-align: center
+        .content-image
+            width: 875px
+            height: 621px
+            img 
+                width: 100%
+                height: 100%
+    .section-footer
+        margin-top: 50px
+        width: 100%   
+//? Responsive 
+//* Phone Devices              
+@media (max-width: $smallScreen) 
+    .header 
+        width: 100% !important
+    .section-header
+        width: 100% !important
+        height: 300px !important
+        .background-image
+            height: 100% !important
+            img
+                height: 100% !important
+        .content         
+            display: flex
+            justify-content: center !important
+            align-items: center !important
+            .header
+                margin-top: 0 !important
+                height: auto !important
+                font-size: 45px !important
+                font-weight: 900 !important
+    .what-is      
+        flex-direction: column !important
+        width: 100%    
+        .content 
+            width: 100%
+            height: auto
+            .row 
+                width: 100% !important
+                padding-left: 0px !important
+                .content-header
+                    h1 
+                        margin-left: 5%
+                .content-text
+                    width: 100% !important
+                    height: auto
+                    box-sizing: border-box
+                    padding: 0px 5px
+                    p 
+                        width: 100% !important
+            .row-2
+                .content-header
+                    width: 100% !important
+                    // background: red !important
+                    h1 
+                        margin-left: 10px !important
+                        font-size: 28px
+                        margin-left: 0
+                        width: 100% !important
+                .content-text
+                    width: 100% !important
+                    padding-left: 30px !important
+                    li 
+            .image-plant
+                width: 100%
+                display: flex
+                justify-content: center
+                img
+                    width: 250px 
+        .image            
+            display: none
+    .section-productivity
+        width: 98% !important
+        .content-header
+            h1
+                width: 95% !important
+                font-size: 27px !important
+            margin-bottom: 20px
+        .content-images
+            margin-bottom: 20px
+            .plant-image
+                .plant-img 
+                    width: 350px !important 
+                    height: 500px !important
+                .scissors-gif
+                    width: 250px !important
+            .content
+                top: 20% !important
+                left: -2% !important
+                height: auto !important
+                width: 400px !important             
+                .content-image
+                    width: 90% !important
+                    margin-left: 60px
+                    height: auto !important
+                    .content-variety
+                        margin-bottom: 0px
+                    .content-variety, .content-graft
+                        width: 70% !important             
+                        h1 
+                            font-size: 20px !important
+                        .text
+                            margin-left: -20px !important
+                            width: 180px !important
+                            li 
+                                width: 100% !important
+                    .line-right-decoration                     
+                        right: 20px !important
+                        height: 100% !important
+                .vertical-title-right
+                    right: -185px !important
+            .graph-image
+                position: relative !important
+                width: 90% !important
+                margin-top: 15% !important
+                height: 300px !important
+                margin-bottom: 30px !important
+                img 
+                    width: 90%   
+        .graph-image-small
+            display: none    
+        .decoration-margin
+            width: 100px !important
+            height: 50px !important
+    .section-usprocess
+        .content-image
+            width: 100% !important
+            height: 300px !important
+            img
+                width: 100% !important
+                height: 100% !important
+//* Tablet Devices
+@media (max-width: $tabletScreen) and (min-width: 821px) 
+    .section-header
+        height: 500px !important
+        .background-image
+            height: 100% !important
+            img 
+                height: 100%
+    .what-is 
+        .content
+            height: auto !important      
+            .image-plant
+                display: none
+            .row 
+                padding: 0 0 50px 50px !important
+                width: auto !important   
+        .image
+            right: 400px !important
+            img 
+                height: 100% !important
+    .section-productivity
+        .content-images
+            .plant-image
+                margin-bottom: 20px
+                .plant-img
+                    width: 400px !important
+                    height: 520px !important
+                .scissors-gif
+                    width: 250px !important
+                    left: 5% !important
+            .content 
+                top: 35% !important                
+                left: 9% !important
+                .content-image
+                    .content-variety
+                        margin-bottom: 0px !important
+                    .content-variety, .content-graft
+                    .content-graft
+                        .vertical-title
+                            bottom: -22% !important
+                        .text 
+                    .line-right-decoration                     
+                        height: 300px !important
+                .vertical-title-right
+                    bottom: 16% !important
+                    h1
+            .graph-image
+                display: none
+                position: relative !important
+        .graph-image-small
+            // display: none !important
+            margin-left: 20%
+            // margin-bottom: 50px !important
+            background-color: $principal-color
+            width: 528px
+            height: 446px
+            padding: 10px
+//* Desktop devices
+@media (max-width: $desktopScreen) and (min-width: 1025px)
+    .section-header
+        height: 80vh !important
+        .background-image
+            height: 100% !important
+            img 
+                height: 100%
+    .what-is
+        .content
+            .row
+                margin-left: 0 !important
+                padding-left: 120px !important
+                width: 650px !important
+    .section-productivity
+        .content-images
+            .graph-image
+                width: 340px  !important
+                height: 300px !important
+                img 
+                    width: 100% !important
+                    height: 100% !important
+        .graph-image-small
+            display: none
+//* Large Devices
+@media (min-width: $LargeDesktopScreen)
+    .section-header
+        .background-image
+            height: 100%
+            img
+                height: 100%
+    .what-is
+        .content
+            .row
+                padding-left: 100px
+                width: 1122px   
+            .row-1
+                margin-bottom: 50px
+            .row-2
+                .content-text
+                    margin-left: 35px
+    .section-productivity
+        .content-images
+            .content
+                .content-image
+                    left: 0%
+        .graph-image-small
+            display: none

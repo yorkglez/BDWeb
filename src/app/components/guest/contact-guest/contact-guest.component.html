@@ -1,0 +1,134 @@
+    <div class="header" @enterState>
+        <div class="content"> 
+    <!--* Start Header  -->
+        <div class="header-content">
+            <!--* Nav Start Here  -->
+            <app-navbar></app-navbar>
+            <div class="header-slogan">
+                <p class="color-white">Let's</p>
+                <p class="color-blue">Ge in</p>
+                <p class="color-white">touch</p>
+            </div>
+        </div>
+        <!--* Header Banner Start  -->
+        <div class="banner-img">
+            <img src="/assets/images/captura de pantalla 2021-09-10 a la(s) 210023-crop-u237743.jpg" />
+        </div> 
+    </div>
+    <!--* Contact Section Start -->
+    <div class="contact-section">
+        <div class="contact-content">
+        <div class="content">
+            <h1 class="title title-header-1">
+               Contact
+            </h1>
+            <div class="text">
+                <p>Carretera Libre El Refugio - San Marcos, Crucero del Carmen S/N; El Carmen Jalisco, México.</p>
+          
+                <!-- <p>contact@bluedropmx.com</p> -->
+            </div>
+            <ul class="contact-menu">
+                <li class="email">
+                    <a href="mailto:contact@bluedropmx.com">contact@bluedropmx.com</a>
+                </li>
+                <li class="whatsapp">
+                    <a href="https://api.whatsapp.com/send/?phone=5213313663049&text&app_absent=0">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+            <h1 class="title title-header-1">
+                Follow us!
+            </h1>
+            <!-- Social Networks Start  -->
+            <div class="social-networks">
+                <div class="companies-list">
+                    <div class="icons">
+                        <div class="icon"><a href="https://www.linkedin.com/company/bluedrop---sustainable-agroforestry"><i class="fab fa-linkedin"></i></a></div>
+                        <div class="icon"><a href="https://www.facebook.com/bluedropmexico"><i class="fab fa-facebook-square"></i></a></div>
+                        <div class="icon"><a href="https://www.instagram.com/bluedropmx/"><i class="fab fa-instagram-square"></i></a></div>
+                    </div>               
+                    <span>BlueDrop Sustainable Agroforestry</span>
+                </div>
+                <div class="companies-list">
+                    <div class="icons">
+                        <div class="icon"><a href="https://www.facebook.com/bluedrop.nursery"><i class="fab fa-facebook-square"></i></a></div>
+                        <div class="icon"><a href="https://www.instagram.com/bluedrop.nursery"><i class="fab fa-instagram-square"></i></a></div>
+                    </div>                 
+                    <span>BlueDrop Nursery</span>
+                </div>
+                <div class="companies-list">
+                    <div class="icons">
+                        <div class="icon"><a href="https://www.facebook.com/bluedrop.produce"><i class="fab fa-facebook-square"></i></a></div>
+                        <div class="icon"><a href="https://www.instagram.com/bluedrop.produce"><i class="fab fa-instagram-square"></i></a></div>
+                    </div>                 
+                    <span>BlueDrop Produce</span>
+                </div>
+                <div class="companies-list">
+                    <div class="icons">
+                        <div class="icon"><a href="https://www.facebook.com/bluedrop.berries"><i class="fab fa-facebook-square"></i></a></div>
+                        <div class="icon"><a href="https://www.instagram.com/bluedrop.berries"><i class="fab fa-instagram-square"></i></a></div>
+                    </div>        
+                    <span>BlueDrop Berries</span>
+                </div>
+                <!-- <li class="companies-list">
+                    <ul class="icons">
+                  
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                    <span>BlueDrop Nursery</span>
+                </li>
+                <li class="companies-list">
+                    <ul class="icons">
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                    <span>BlueDrop Produce</span>
+                </li>
+                <li class="companies-list">
+                    <ul class="icons">
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                    <span>BlueDrop Berries</span>
+                </li> -->
+            </div>
+        </div>
+        <!-- Content Email Start  -->
+        <div class="content-email">
+            <div class="grpelem"></div>
+            <div class="email-form">
+                <h1>Write us!</h1>
+                <form  [formGroup]="formEmail" (ngSubmit)="sendMail(formEmail)">
+                    <div class="row">
+                        <div class="form-control">                        
+                            <input type="text" name="name" id="name" placeholder="Name:"  formControlName="name">
+                            <!-- <label >Name: </label> -->
+                        </div>
+                         <div class="form-control">                      
+                            <input type="email" name="email" id="email" placeholder="Email: "  formControlName="email">
+                            <!-- <label for="email">Email: </label> -->
+                        </div>
+                    </div>        
+                    <div class="row">
+                        <div class="form-control">
+                            <!-- <label for="message">Message: </label> -->
+                            <textarea name="message" id="" cols="50" rows="5" placeholder="Message:" formControlName="message"></textarea>
+                        </div>
+                    </div>  
+                    <button class="btn">Send</button> 
+                </form>       
+                <span class="alert-message-success" [ngClass]="isEmailSend ? 'active': 'nan'"><i class="fas fa-check-circle"></i> Your message was sent successfully. Thanks! </span>                                   
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--* Map Section Start  -->
+    <div class="map-section">
+        <div class="content">
+            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.4409286243426!2d-103.90949768460091!3d20.69231220455351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff5568f9f3d9%3A0x277b32fb0437bbc8!2sBlueDrop%20Sustainable%20Agroforestry!5e0!3m2!1ses-419!2smx!4v1632503011842!5m2!1ses-419!2smx" width="1530" height="463" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <app-footermore-guest></app-footermore-guest>
+</div>

@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&display=swap');
+.content
+{
+    transition: all .5s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+/**Header Start  */
+.header
+{
+    height: auto;
+    width: 100%;
+    z-index: 200;
+}
+/** Navbar Start */
+.nav-container
+{
+    background-color: #173853;
+    height: 85px;
+    width: 100%; 
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+}
+.nav
+{
+    background-color: #173853;
+    height: 85px;
+    width: 70%;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+}
+.nav-menu 
+{
+    display: flex;
+    list-style: none;
+    margin-left: 200px;
+}
+.nav-item
+{
+    padding-left: 5px;
+}
+.nav-item a
+{
+    padding: 16px 50px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    text-transform: uppercase;    
+    line-height: 17px;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-feature-settings: 'liga';
+    bottom: 0;
+}
+.nav-item a:hover
+{
+    border: 1px solid white;
+}
+.nav-item a.active
+{
+    border-bottom: 1px solid white;
+}
+
+.nav-logo
+{
+   width: 158px;
+   height: 49px; 
+}
+.nav-logo img 
+{
+    aspect-ratio: auto 158 / 49;
+    width: 100%;
+    height: 100%;
+}
+.btn-menu
+{
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+.header-slogan
+{
+    position: absolute;
+    z-index: 200;
+    left: 20%;
+    top: 20%;
+}
+.header-slogan p
+{
+    text-transform: uppercase;
+    line-height: 90px;
+    font-size: 99px;
+    font-family: lato, sans-serif;
+    font-weight: 900;
+    text-shadow: 4px 4px 6px rgb(0 0 0 / 15%);
+}
+.color-blue
+{
+    color: #173853;
+}
+.color-white
+{
+    color: #fff
+}
+.banner-img
+{   
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 813px;
+}
+.banner-img img
+{
+    width: 100%;
+    height: 100%;
+}
+/** Founder Section Start  */
+.founder-section
+{
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+.founder-section .row
+{
+    position: relative;
+    display: flex;
+    /* width: 100%; */
+}
+.founder-section .founder
+{
+    /* align-items: center;
+    justify-content: center; */
+    /* width: 100%; */
+    /* background-color: hotpink; */
+}
+.founder-section .founder .image
+{
+    margin-left: 10%;
+}
+.founder-section .row-ceo .image
+{
+    margin-left: 8%;
+}
+.founder-section .row .image
+{
+    position: relative;
+    width: 295px;
+    height: 461px;
+    /* margin-left: 10%; */
+}
+.founder-section .row .image img
+{
+    /* width: 100%; */
+    /* height: 100%; */
+}
+.founder-section .row .image .image-info
+{
+    position: absolute;
+    padding: 6px;
+    background-color: #173853;
+}
+.founder-section .row .image .image-info-founder 
+{
+    bottom: 10px;
+    right: -85px;
+}
+.founder-section .row .image .image-info-ceo 
+{
+    bottom: 15px;
+    left: -55px;
+}
+.founder-section .row .image .image-info p 
+{
+    font-family: lato, sans-serif;
+    font-weight: 200;
+    line-height: 18px;
+    font-size: 15px;
+    color: #fff;
+}
+.founder-section .founder .content
+{
+    margin-left: 10%;
+}
+.founder-section .row-ceo .content
+{
+    margin-left: 15%;
+}
+
+.founder-section .row-ceo .content
+{
+    width: 500px;
+}
+.founder-section .row .content
+{
+    display: flex;
+    justify-content: space-around;
+    /* width: 800px; */
+    /* margin-left: 15%; */
+}
+.founder-section .row .content .title
+{
+    text-align: left;
+    z-index: 58;
+    text-transform: uppercase;
+    font-family: lato, sans-serif;
+    background-color: transparent;
+    font-weight: 900;
+    line-height: 42px;
+    font-size: 30px;
+    width: 570px;
+    color: #173853;
+}
+
+.founder-section .row .content .text
+{
+    text-align: left;
+    position: relative;
+    font-family: lato, sans-serif;
+    background-color: transparent;
+    font-weight: 400;
+    color: #173853;
+    line-height: 26px;
+    font-size: 22px;
+    width: 500px;
+    min-height: 159px;
+}
+.founder-section .row .content .text-1
+{
+    left: 16px;
+}
+.founder-section .row .content .text-2
+{
+    left: 16px;
+}
+.founder-section .row .content .text-2 p
+{
+    margin-bottom: 25px;
+}
+/** Section Global Start */
+.section-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;   
+}
+.content-title
+{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 70%;
+    margin-bottom: 100px;
+    margin-top: 60px;
+}
+
+.leading-text
+{
+    width: 570px;
+    height: 50px;
+}
+.leading-text p
+{
+    text-align: center;
+    position: relative;
+    line-height: 42px;
+    font-size: 30px;    
+    letter-spacing: 0px;
+    z-index: 122;
+    text-transform: uppercase;
+    font-family: lato, sans-serif;
+    background-color: transparent;
+    font-weight: 900;
+    color: #173853;
+}
+.leading-head-line
+{
+    border-color: #000000;
+    background-color: transparent;
+    border-style: solid;
+    position: relative;
+    height: 15px;
+    border-width: 0px 0px 1px; 
+    width: 177px;
+    margin-top: 26px;
+    display: inline;
+    float: left;
+}
+/** Our Numbers Start  */
+.ournumbers-section
+{
+    height: auto;
+}
+.ournumbers-section .cards
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    /* height: 1000px;  */
+}
+.ournumbers-section .cards .card 
+{
+    position: relative;
+    width: 342px;
+    height: 342px;
+}
+.ournumbers-section .cards .row
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+}
+.ournumbers-section .cards .card .card-image
+{
+    width: 310px;
+    height: 267px;
+}
+.ournumbers-section .cards .card .card-title
+{
+    position: absolute;
+    width: 228px;
+    height: 92px;
+    right: 4%;
+    bottom: 35px;
+    background-color: #FAFAFA;
+    box-shadow: -4px 0px 9px rgb(0 0 0 / 20%);
+    box-sizing: border-box;
+    padding: 6px 5px;
+    
+}
+.ournumbers-section .cards .card .card-title p
+{
+    width: auto;
+    line-height: 29px;
+    font-size: 21px;
+    font-weight: 900;
+    /* width: 162px; */
+    color: #173853;
+    text-transform: uppercase;
+    font-family: lato, sans-serif;
+}
+.ournumbers-section .cards .card .title-2 p
+{
+    width: 100%;
+}
+.ournumbers-section .cards .card .title-2
+{
+    height: 92px;
+}
+/**? Tablets Devices  */
+@media screen and (max-width: 952px) and (min-width: 821px)
+{
+    /** Section Header Start  */
+    .header .header-content 
+    {
+
+    }
+    .header .banner-img
+    {
+        height: 600px;
+    }
+    /** Section Header End  */
+    /** Section Founder Start  */
+    .founder-section .row 
+    {
+        height: auto;
+        /* justify-content: unsafe; */
+        /* background-color:violet ; */
+    }
+    .founder-section .founder
+    {
+        margin-bottom: 50px;
+    }
+    .founder-section .row .image
+    {
+        position: relative;
+        background-color: tomato;
+        width: 240px;
+        height: 170px;
+        margin-left: 0;
+        /* margin-right: 30px; */
+        /* height: auto; */
+    }
+    .founder-section .row .image .image-info
+    {
+        position: relative;
+        bottom: 50px;
+        width: 150px;
+        /* display: none; */
+    }
+    .founder-section .founder .image .image-info
+    {
+        left: 0;
+        bottom: 20px;
+    }
+    .founder-section .row .image img 
+    {
+        /* display: none; */
+        width: 100%;
+    }
+    .founder-section .row .content
+    {
+        /* display: none; */
+        width: auto;
+        margin-left: 10px;
+    }
+    .founder-section .row .content .title
+    {
+        padding-left: 15px;
+        width: 500px;
+    }
+    .founder-section .row .content .text 
+    {
+        font-size: 20px;
+    }
+    .founder-section .row-ceo 
+    {
+        display: flex;
+        justify-content: space-around;
+        /* background-color: yellow; */
+    }
+    .founder-section .row-ceo .content
+    {
+        padding: 0;
+        margin: 0;
+    }
+    .founder-section .row-ceo .image 
+    {
+        /* display: ; */
+        position: relative;
+        width: 240px;
+        height: 350px;
+
+        right: 0;
+    }
+    .founder-section .row-ceo .image img 
+    {
+        /* display: none; */
+    }
+    .founder-section .row-ceo .content .text
+    {
+        width: 450px;
+        margin: 0;
+        padding: 0;
+    }
+    /** Section Founder End  */
+    /** Ournumbers Founder Start  */
+    .ournumbers-section .leading-head
+    {
+        margin-bottom: 30px;   
+    }
+    .ournumbers-section .cards
+    {
+        width: 100%;
+    }
+    .ournumbers-section .cards .row
+    {
+        /* background-color: yellow; */
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    /** Ournumbers Founder End  */
+
+}
+/**? Phones Devices  */
+@media screen and (max-width: 500px)
+{
+    .content
+    {
+      width: 100%;
+      /* background-color: red; */
+    }
+    .content-title 
+    {
+      width: 100%;
+      height: 100px;
+      /* margin-bottom: 80px; */
+    }
+    /** Header Start Here  */
+    .header .banner-img 
+    {
+        width: 100%;
+        height: 300px;
+    }
+    .header .header-slogan
+    {
+        top: 15%;
+        left: 10%;
+        /* background-color: teal; */
+    }
+    .header .header-slogan p
+    {
+        font-size: 50px;
+        height: 55px;
+    }
+      /** Header End Here  */
+      /** Founder Start Here  */
+    .founder-section
+    {
+        width: 100%;
+        /* background-color: bisque; */
+    }
+    .founder-section .row 
+    {
+        /* background-color: blue; */
+        width: 100%;
+    }
+    .founder-section .row .image
+    {
+        width: 300px;
+    }
+    .founder-section .founder .image .image-info
+    {
+        position: absolute;
+        right: -10px;
+        bottom: 0;
+        width: 150px;
+    }
+    .founder-section .row .image .image-info-ceo
+    {
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        width: 150px;
+    }
+    .founder-section .content .title
+    {
+        order: 1;
+    }
+    .founder-section .content .text
+    {
+        order: 3;
+    }
+    .founder-section .image
+    {
+        order: 2;
+    }
+    .founder-section .row
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    .founder-section .row .content
+    {
+        width: 100%;
+        margin: 0;
+    }
+    .founder-section .row .content .title
+    {
+        text-align: center;
+        font-size: 25px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .founder-section .row .content .text 
+    {
+        width: 95%;
+        padding-right: 5px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .founder-section .row .content .text p
+    {
+        height: auto;
+        text-align: left;
+        width: auto;
+    }
+    .founder-section .row .image
+    {
+        /* order: 2; */
+        /* display: none; */
+        /* width: 100%; */
+    }
+    /** Founder End Here  */
+    /** Our Numbers Start Here  */
+    .ournumbers-section
+    {
+        width: 100%;
+        height: auto;
+        /* background-color: teal; */
+    }
+    .ournumbers-section .cards 
+    {
+        /* background-color: tomato; */
+        width: 100%;
+        flex-direction: column;
+    }
+    .ournumbers-section .cards .row  
+    {
+        flex-direction: column;
+    }
+    .ournumbers-section .cards .row .card 
+    {
+        display: flex;
+        justify-content: center;
+        /* display: none; */
+    }
+    .ournumbers-section .cards .row .card .card-title.title-1
+    {
+        bottom: 5px;
+    }
+    .ournumbers-section .cards .row .card .card-title.title-2
+    {
+        bottom: 20px;
+    }
+    /** Our Numbers End Here  */
+}
+/**? Extra Large Devices  */
+@media screen and (min-width: 1201px) 
+{
+    .header
+    {
+        /* background-color: cadetblue; */
+    }
+    .header .banner-img
+    {
+        height: 700px;   
+    }
+}

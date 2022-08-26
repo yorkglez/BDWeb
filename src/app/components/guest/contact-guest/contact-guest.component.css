@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&display=swap');
+
+.alert-message-success
+{
+  position: absolute;
+  bottom: 5px;
+  visibility: hidden;
+  color: #fff;
+  font-weight: 300;
+  font-family: lato, sans-serif;
+  width: 100%;
+  /* margin-top: 150px !important; */
+  font-size: 17px;
+  /* background-color: red; */
+}
+.alert-message-success.active 
+{
+  visibility: visible;
+  transition: .3s ease;
+}
+
+/**Header Start  */
+.header
+{
+    /* position: relative; */
+    height: auto;
+    width: 100%;
+    z-index: 200;
+    /* background-color: salmon; */
+}
+.header-slogan
+{
+    position: absolute;
+    z-index: 200;
+    left: 20%;
+    top: 20%;
+}
+.header-slogan p
+{
+    text-transform: uppercase;
+    line-height: 90px;
+    /* color: #FFFFFF; */
+    font-size: 95px;
+    font-family: lato, sans-serif;
+    font-weight: 900;
+    text-shadow: 4px 4px 6px rgb(0 0 0 / 15%);
+}
+.color-blue
+{
+    color: #173853;
+}
+.color-white
+{
+    color: #fff
+}
+.banner-img
+{   
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 813px;
+}
+.banner-img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/** Contact Section Start  */
+.contact-section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+    margin-top: 100px;
+}
+.contact-section .content
+{
+  width: 668px;
+  height: 513px;
+  padding-top: 20px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  background-color: #F0F0F0;
+}
+.contact-section .content h1
+{
+    line-height: 42px;
+    font-size: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: lato, sans-serif;
+    background-color: transparent;
+    font-weight: 900;
+    color: #173853;
+    margin-bottom: 20px;
+}
+.contact-section .content .text
+{
+    width: 388px;
+}
+.contact-section .content .text p
+{
+    line-height: 26px;
+    font-size: 22px;
+    text-align: left;
+    position: relative;
+    font-family: lato, sans-serif;
+    background-color: transparent;
+    font-weight: 400;
+    color: #173853;
+    margin-bottom: 20px;
+}
+.contact-section .content .contact-menu
+{
+  display: flex;
+  margin-bottom: 20px;
+}
+.contact-section .content .contact-menu li 
+{
+  /* background-color: red; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  list-style: none;
+}
+.contact-section .content .contact-menu li a
+{
+  display: block;
+  line-height: 26px;
+  font-size: 22px;
+  text-align: center;
+  position: relative;
+  font-family: lato, sans-serif;
+  background-color: transparent;
+  font-weight: 400;
+  color: #173853;
+}
+.contact-section .content .contact-menu .email
+{
+
+}
+.contact-section .content .contact-menu .whatsapp
+{
+  margin-left: 25px;
+}
+.contact-section .content .contact-menu .whatsapp a
+{
+  font-size: 50px;
+}
+.contact-section .content .social-networks 
+{
+  height: auto;
+}
+.contact-section .content .social-networks .companies-list
+{
+  display: flex;
+  align-items: center;
+  height: 50px;
+} 
+.contact-section .content .social-networks .companies-list .icons
+{
+  display: flex;
+  justify-content: right;
+  width: 130px;
+} 
+.contact-section .content .social-networks .companies-list .icon a 
+{
+  display: block;
+  color: #173853;
+  font-size: 30px;
+  padding: 5px
+}
+.contact-section .content .social-networks .companies-list span  
+{
+  line-height: 39px;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: left;
+  font-family: lato, sans-serif;
+  color: #173853;
+  margin-left: 10px;
+}
+
+.contact-section .content-email
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 420px;
+    left: -250px;
+    /* background-color: tomato; */
+}
+.contact-section .content-email .email-form 
+{
+  position: relative;
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding-left: 40px;
+  width: 421px;
+  height: 100%;
+  background-color: #173853;
+  /* background-color: tomato; */
+  box-shadow: 6px 6px 8px rgb(0 0 0 / 30%);
+}
+.contact-section .content-email .email-form  h1 
+{
+  position: relative;
+  width: auto;
+  left: 0;
+  /* top: 30px;
+  left: 0px; */
+  color: white;
+  text-align: left;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: lato, sans-serif;
+  color: #FFFFFF;
+}
+.contact-section .content-email .email-form form 
+{
+  /* display: flex; */
+  margin-top: 50px;
+  width: 90%;
+  height: 250px;
+  /* background-color: teal; */
+}
+.contact-section .content-email .email-form form .row 
+{
+  display: flex;
+  width: 100%;
+  /* background-color: blanchedalmond; */
+}
+.contact-section .triangle
+{
+  /* background-color: green; */
+  position: relative;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 60px 60px 60px 0;
+  border-color: transparent #173853 transparent transparent;
+  /* box-shadow: 0px 8px 8px rgb(0 0 0 / 30%); */
+}
+.content-email .grpelem
+{  
+  position: absolute;
+  z-index: 490;
+  top: 10%;
+  left: 165px;
+  display: inline;
+  width: 160px;
+  height: 160px;
+  -webkit-transform: matrix(0.7071,-0.7071,0.7071,0.7071,-33,80);
+    -ms-transform: matrix(0.7071,-0.7071,0.7071,0.7071,-33,80);
+    transform: matrix(0.7071,-0.7071,0.7071,0.7071,-33,80);
+    background-color: #173853;
+    box-shadow: 0px 8px 8px rgb(0 0 0 / 30%);
+    z-index: 32;
+    position: relative;
+}
+.contact-section .email-form .form 
+{
+    /* position: relative; */
+    /* height: 50px;
+    width: 100%; */
+    /* background-color: yellowgreen; */
+}
+/**Input Email Start  */
+.email-form .form-control 
+{
+    position: relative;
+}
+  
+.email-form .form-control input 
+{
+    width: 95%;
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.email-form .form-control textarea
+{
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  resize: none;
+}
+
+.email-form .form-control input::placeholder, 
+.email-form .form-control textarea::placeholder 
+{
+    font-style: italic;
+    font-family: lato, sans-serif;
+    font-weight: 300;
+    padding: 6px;
+    font-size: 16px;
+    color: #fff;
+    opacity: 1;
+}
+   .email-form .form-control label {
+    position: absolute;
+    top:0;
+    left: 0;
+    font-style: italic;
+    font-family: lato, sans-serif;
+    font-weight: 300;
+    padding: 6px;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .email-form .form-control input:focus + label,
+  .email-form .form-control textarea:focus + label
+  {
+    display: none;
+  }
+  .email-form .form-control input:focus,
+  .email-form .form-control textarea:focus
+  {
+    background-color: white;
+    color: black;
+  }
+  .email-form button
+  {
+    width: 157px;
+    height: 33px;
+    font-weight: 300;
+    font-family: lato, sans-serif;
+    border: 1px solid #fff;
+    color: #fff;    
+    background-color: transparent;
+    /* text-transform: uppercase; */
+  }
+  .email-form button:hover
+  {
+    cursor: pointer;
+    color: #111;
+    background-color: #fff;
+  }
+  /* .email-form .form-control input:valid ~ label
+  {
+
+  } */
+
+  /* .email-form .form-control input:focus ~ label,
+  .email-form .form-control input:valid ~ label {
+    top: -2px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+  } */
+  
+  /* .email-form form a { 
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .email-form a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  .email-form a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .email-form a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .email-form a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .email-form a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .email-form a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  } */
+/** Contact Section End  */
+/** Map Section End  */
+.map-section 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.map-section .content
+{
+  background-color: #94959A;
+  width: 1530px;
+  height: 463px;
+}
+/** Map Section End  */
+
+/* form .form-control
+{
+    position: relative;
+}
+form .form-control label
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-style: italic;
+    font-family: lato, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+form .form-control input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+form .form-control input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+} */
+/** Section Global Start */
+.section-content
+{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    /* background-color: rebeccapurple; */
+    
+}
+
+/**? Tablets Devices  */
+@media screen and (max-width: 952px) and (min-width: 821px)
+{
+  /** Header Section Start  */
+  .header .header-content
+  {
+    background-color: chartreuse;
+  }
+  .header .header-content .header-slogan 
+  {
+    top: 130px;
+    left: 50px;
+    /* background-color: chartreuse; */
+  }
+  .header .header-content .header-slogan p
+  {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .header .banner-img 
+  {
+    height: 550px;
+    /* display: none; */
+    /* height: 100%; */
+    /* height: 00px; */
+  }
+  .header .banner-img img 
+  {
+    height: 100%;
+  }
+  /** Header Section End  */
+  /** Contact Section Start  */
+  .contact-section 
+  {
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+  }
+  .contact-section .content
+  {
+    margin-bottom: 20px;
+  }
+  .contact-section .content-email
+  {
+    width: auto;
+    position: relative;
+    left: 0;
+    background-color: cornflowerblue;
+    /* display: none; */
+  }
+  .contact-section .content-email .grpelem
+  {
+    display: none;
+  }
+  /** Contact Section End  */
+  /** Map Section Start  */
+  .map-section 
+  {
+    width: 100%;
+  }
+  .map-section .content
+  {
+    width: 100%;
+  }
+  .map-section .content iframe
+  {
+    width: 100%;
+  }
+  /** Map Section End  */
+  
+}
+/**? Phones Devices  */
+@media screen and (max-width: 500px)
+{
+  /** Contact Section Start */
+  .header
+  {
+    /* display: none; */
+
+  }
+  .header .header-slogan p
+  {
+    font-size: 70px;
+  }
+  .header .banner-img
+  {
+    width: 100%;
+    height: 400px;
+  }
+  .header .banner-img img
+  {
+    width: 100%;
+    height: 100%;
+  }
+  .contact-section .contact-content
+  {
+    width: 100%;
+  }
+  .contact-section
+  {
+    width: 100%;
+    flex-direction: column;
+    background-color: chocolate !important;
+  }
+  .contact-section .content 
+  {
+    /* display: none; */
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+  .contact-section .content .text
+  {
+    width: auto;
+  }
+  /** Contact Section End */
+  /** Social Networks Start  */
+  .social-networks
+  {
+    width: 100%;
+    height: auto;
+  }
+  .contact-section .content .social-networks .companies-list
+  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+  }
+
+  /** Social Networks End  */
+  .contact-section .content-email
+  {
+    width: 100%;
+    left: 0;
+  }
+  .contact-section .content-email .grpelem
+  {
+    display: none;
+  }
+  .contact-section .content-email .email-form form .btn
+  {
+    width: 80%;
+    height: 50px;
+    margin-left: 35px;
+    /* margin-right: 50%; */
+  }
+  .map-section
+  {
+    width: 100%;
+    height: 500px;
+    /* display: none; */
+  }
+  .map-section .google-map
+  {
+    width: 100%;
+    height: 100%;
+  }
+}
+/**? Extra Large Devices  */
+@media screen and (min-width: 1201px) 
+{
+  .header .banner-img
+  {
+      height: 700px;   
+  }
+
+  .contact-section
+  {
+    display: flex;
+    align-items: center;
+    /* position: relative;
+  
+    flex-direction: row; */
+    width: 100%;
+    /* background-color: cadetblue; */
+  }
+  .contact-section .contact-content
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-left: 20%;
+    /* background-color: chartreuse; */
+  }
+  .map-section
+  {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    /* display: none; */
+  }
+  .map-section .content
+  {
+    width: 80%;
+    height: 100%;
+  }
+  .map-section .content iframe
+  {
+    width: 100%;
+    height: 100%;
+  }
+}

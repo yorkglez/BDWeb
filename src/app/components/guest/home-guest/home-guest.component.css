@@ -1,0 +1,1551 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;900&display=swap');
+.content
+{
+    transition: all .5s ease;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+/** Section Global Start */
+.section-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+.content-title
+{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 70%;
+}
+/**Header Start  */
+.header
+{
+    position: relative;
+    height: 1200px;
+    width: 100%;
+    z-index: 200;
+}
+.header-content
+{
+    position: relative;
+    bottom: 0px;
+    z-index: 300;
+}
+/** Nav Start  */
+#principal-nav
+{
+  /* display: none; */
+}
+#mobile-nav
+{
+  display: none;
+}
+#principal-nav.nav-header nav
+{
+    width: 79.59%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: left;
+}
+#principal-nav.nav-header ul
+{
+    position: relative;
+    width: auto;
+    height: 34px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+#principal-nav .nav-logo
+{
+  position: relative;
+  margin-left: 10%;
+}
+#principal-nav.nav-header .nav-item
+{
+    list-style: none;
+    margin-right: 4rem;
+    margin-top: 10px;
+}
+#principal-nav.nav-header .nav-item .nav-drop
+{
+  display: flex;
+  flex-direction: column;
+  transition: opacity 200ms ease-in-out;
+  padding: 0px 0px;
+  visibility: hidden;
+  position: absolute;
+  background-color: #fff;
+  list-style: none;
+  z-index: 10000;
+  box-sizing: border-box;
+  box-shadow:  0 0 10px black;
+  height: auto;
+  width: 133px;
+}
+#principal-nav.nav-header .nav-item .nav-drop li
+{
+  width: 100%;
+}
+#principal-nav.nav-header .nav-item .nav-drop a
+{
+    color: #000;
+    padding-left: 0px;
+    display: block;
+}
+#principal-nav.nav-header .nav-item .nav-drop a:hover
+{
+    color: #fff;
+    transition: all .4s;
+    background-color:#173853;
+}
+#principal-nav.nav-header .nav-item:hover .nav-drop, .nav-item:focus .nav-drop
+{
+    visibility: visible;
+    opacity: 1;
+}
+#principal-nav.nav-header .nav-item a
+{
+    display: block;
+    height: 17px;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: lato, sans-serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+}
+#principal-nav.nav-header .nav-item a:hover
+{
+  cursor: pointer;
+  border: 1px solid #fff;
+  font-weight: 500;
+}
+#principal-nav.nav-header .nav-logo
+{
+  width: 158px;
+  height: 49px;
+}
+#principal-nav nav
+{
+  width: auto !important;
+}
+.btn-menu
+{
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+/** Nav End  */
+/**Sticky Nav Start  */
+.nav-sticky
+{
+    position: fixed;
+    z-index: 1000;
+    background-color: #173853;
+    height: 85px;
+    width: 100%;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+}
+.nav-sticky .nav
+{
+    transition: all .5s ease;
+    position: relative;
+    z-index: 10000;
+    background-color: #173853;
+    height: 85px;
+    width: 100%;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+
+}
+.nav-sticky .nav-menu
+{
+  display: flex;
+  list-style: none;
+  margin-left: 20%;
+}
+.nav-sticky .nav-item
+{
+    padding-left: 5px;
+}
+
+
+.nav-sticky .nav-item .nav-drop
+{
+  display: flex;
+  flex-direction: column;
+  transition: opacity 200ms ease-in-out;
+  padding: 0px 0px;
+  visibility: hidden;
+  position: absolute;
+  background-color: #fff;
+  list-style: none;
+  z-index: 10000;
+  box-sizing: border-box;
+  box-shadow:  0 0 10px black;
+  height: auto;
+  width: 180px;
+}
+.nav-sticky .nav-item .nav-drop li
+{
+  width: 100%;
+}
+.nav-sticky .nav-item .nav-drop a
+{
+    color: #000;
+    padding-left: 20px;
+    display: block;
+    text-align: left;
+}
+.nav-sticky .nav-item .nav-drop a:hover
+{
+    color: #fff;
+    transition: all .4s ease;
+    background-color:#173853;
+}
+.nav-sticky .nav-item:hover .nav-drop, .nav-item:focus .nav-drop
+{
+    visibility: visible;
+    opacity: 1;
+}
+.nav-sticky .nav-item a
+{
+    box-sizing: border-box;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    line-height: 17px;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-feature-settings: 'liga';
+    bottom: 0;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.nav-sticky .nav-item a:hover
+{
+  cursor: pointer;
+  border: 1px solid white;
+  box-sizing: border-box;
+  transition: all .4s ease;
+}
+.nav-sticky .nav-item a.active
+{
+    border-bottom: 1px solid white;
+
+}
+.nav-sticky .nav-logo
+{
+  position: relative;
+  width: 158px;
+   height: 49px;
+   left: 10%;
+}
+.nav-sticky .nav-logo img
+{
+    aspect-ratio: auto 158 / 49;
+    width: 100%;
+    height: 100%;
+}
+.nav-sticky .btn-menu
+{
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+/**Sticky Nav End  */
+.header-slogan
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 309px;
+}
+.header-slogan h1
+{
+    position: absolute;
+    text-align: center;
+    text-shadow: 6px 6px 8px rgb(0 0 0 / 50%);
+    box-shadow: none;
+    z-index: 106;
+    font-family: lato, sans-serif;
+    background-color: transparent;
+    font-weight: 400;
+    color: #FFFFFF;
+    bottom: 0;
+    line-height: 38px;
+    font-size: 27px;
+}
+.header-content
+{
+    position: relative;
+    bottom: 0px;
+    z-index: 300;
+}
+.banner-img
+{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.banner-img img
+{
+    width: 100%;
+    height: 100%;
+}
+/**Leading Start*/
+/**Content Titles Start */
+.leading-text
+{
+    width: 570px;
+    height: 50px;
+}
+.leading-text p
+{
+    text-align: center;
+    position: relative;
+    line-height: 42px;
+    font-size: 30px;
+    letter-spacing: 0px;
+    z-index: 122;
+    text-transform: uppercase;
+    font-family: lato, sans-serif;
+    background-color: transparent;
+    font-weight: 900;
+    color: #173853;
+}
+.leading-head-line
+{
+    border-color: #000000;
+    background-color: transparent;
+    border-style: solid;
+    position: relative;
+    height: 15px;
+    border-width: 0px 0px 1px;
+    width: 177px;
+    margin-top: 26px;
+    display: inline;
+    float: left;
+}
+.leading-content .leading-head .leading-head-line
+{
+  /* background-color: hotpink; */
+}
+.leading-cards
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    height: 100%;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+.leading-cards .card
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    /* margin-left: 5rem; */
+    /* background-color: darkgreen; */
+}
+.leading-cards .card .card-icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 177px;
+    height: 178px;
+
+    border-radius:  50%;
+}
+.card-icon-1-color
+{
+    background-color: #173853;
+}
+.card-icon-2-color
+{
+    background-color: #2F3D4D;
+}
+.card-icon-3-color
+{
+    background-color: #455A77;
+}
+.leading-cards .card .card-text
+{
+    position: relative;
+    width: 275px;
+    margin-top: 10px;
+    text-align: center;
+    color: #173853;
+    line-height: 31px;
+    font-size: 22px;
+    z-index: 110;
+    font-family: lato, sans-serif;
+    background-color: transparent;
+    font-weight: 300;
+}
+.leading-banner
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 730px;
+    /* background: cornflowerblue; */
+}
+.leading-banner .image-background
+{
+    /* background-color: teal; */
+    position: absolute;
+    /* z-index: 300; */
+    width: 100%;
+    height: 730px;
+}
+.leading-banner .image-background img
+{
+    /* position: absolute; */
+    /* z-index: 100; */
+    /* position: absolute; */
+    /* z-index: -1; */
+    height: 100%;
+    width: 100%;
+
+}
+.leading-banner .leading-banner-text
+{
+    /* position: relative;
+    height: 229px;
+    width: 609px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    opacity: .9;
+    border-radius: 20px;
+    margin-top: 50px; */
+}
+.leading-banner .leading-banner-text p
+{
+    /* position: relative;
+    text-align: center;
+    /* z-index: 300; */
+    /* margin-right: -10000px; */
+    /* font-family: lato, sans-serif;
+    background-color: transparent; */
+    /* font-weight: 400; */
+    /* color: #173853; */
+
+    /* width: 506px; */
+    /* min-height: 159px;
+    line-height: 26px;
+    font-size: 22px; */
+    /* margin-top: 86px;
+    margin-left: 49.84%; */
+}
+/** Companies Start */
+.companies-content
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.companies-content .content-title
+{
+  display: flex;
+  position: relative;
+  /* justify-content: center;
+  align-items: center; */
+  /* align-items: center;
+  justify-content: center; */
+  height: auto;
+  margin-bottom: 50pt;
+}
+.companies-content .content-title .leading-text
+{
+  width: 566px;
+
+}
+.companies-content .content-title .leading-head-line
+{
+  position: relative;
+  margin: 0;
+  /* padding: 0; */
+  padding-top: 5px;
+  margin: 0px 40px;
+}
+.companies-content .cards
+{
+  position: relative;
+  /* z-index: 300; */
+  height: auto;
+  /* background: cyan; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 850px;
+}
+.companies-content .cards .card
+{
+    position: relative;
+    /* z-index: 360; */
+    width: 388px;
+    height: 388px;
+    margin-bottom: 30px;
+}
+.companies-content .cards .row
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.companies-content .cards .card .card-img
+{
+
+    position: absolute;
+    /* z-index: 400; */
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.companies-content .cards .card .card-logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* z-index: 430; */
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+.companies-content .cards .card .card-logo:hover
+{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+.companies-content .cards .card .card-logo a
+{
+    height: 100%;
+    width: 100%;
+}
+.companies-content .cards .card .card-hover
+{
+    position: absolute;
+    z-index: 450;
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+}
+/*? Profitable Companies Start  */
+.profitable
+{
+    height: auto;
+    width: 100% ;
+}
+.profitable .cards
+{
+  display: flex;
+  margin-top: 25px;
+  /* flex-direction: column; */
+  width: 70%;
+  /* background-color: tomato; */
+}
+.profitable .cards .card
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* width: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-text-color-1
+{
+  color: #173853;
+}
+.card-text-color-2
+{
+  color: #1A4266;
+}
+.card-text-color-3
+{
+  color: #364764;
+}
+.card-text-color-4
+{
+  color: #4C6596;
+}
+.card-text-color-5
+{
+  color: #5F90CF;
+}
+.card-text-color-6
+{
+  color: #80BCD5;
+}
+.profitable .cards .card .card-icon
+{
+    width: 119px;
+    height: 119px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.profitable .cards .card .card-title
+{
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    min-height: 51px;
+    line-height: 24px;
+    text-transform: none;
+    font-family: lato, sans-serif;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 700;
+    width: 140px;
+    color: #173853;
+}
+.profitable .cards .card .card-text
+{
+    text-align: center;
+    color: #173853;
+    z-index: 191;
+    line-height: 21px;
+    text-transform: none;
+    font-family: lato, sans-serif;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 300;
+    width: 174px;
+    position: relative;
+}
+
+
+
+/** Certifications Start  */
+.certifications
+{
+
+  /* display: none; */
+  /* background-color: red; */
+}
+.certifications .cards
+{
+  position: relative;
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+
+  /* background-color: red; */
+}
+.certifications .cards .card
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-color: teal; */
+  /* width: auto; */
+  width: 180px;
+  height: 150px;
+}
+.certifications .cards .card-tecnotabla
+{
+  width: 180px;
+  /* height: 150px; */
+}
+.certifications .cards .card-tecnotabla .content
+{
+  display: flex;
+  flex-direction: row;
+}
+.certifications .cards .card-tecnotabla .content .image
+{
+  display: flex;
+  flex-direction: column;
+}
+/* .certifications .cards .card-tecnotabla .content:first-child
+{
+  margin-bottom: 15px;
+  background-color: hotpink;
+} */
+.certifications .cards .card-tecnotabla .content .image .img-2
+{
+  margin-top: 20px;
+}
+.certifications .cards .card-tecnotabla .content .image:first-child
+{
+  margin-right: 15px;
+  /* background-color: hotpink; */
+  /* margin-bottom: 15px; */
+}
+
+.certifications .cards .card .card-title h1
+{
+  /* background-color: tomato; */
+  position: relative;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 26px;
+  font-family: lato, sans-serif;
+  color: #173853;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.certifications .cards .card .content
+{
+  width: 100%;
+  height: auto;
+  /* background-color: violet; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/** Certifications End  */
+/** Legacy Companies Start */
+.legacy
+{
+  /* display: none; */
+  margin-bottom: 50px;
+}
+.legacy .cards
+{
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  height: auto;
+}
+.legacy .cards .card
+{
+  position: relative;
+
+  width: 275px;
+  height: 248px;
+}
+.legacy .cards .card .card-image
+{
+  position: absolute;
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+}
+.legacy .cards .card .card-image img
+{
+  width: 100%;
+  height: 100%;
+}
+.legacy .cards .card .background-card
+{
+  position: absolute;
+  z-index: 510;
+  height: 100%;
+  width: 100%;
+  filter: alpha(opacity=40);
+  background-color: #000000;
+  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+}
+.legacy .cards .card .card-title
+{
+  position: absolute;
+  z-index: 520;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+}
+.legacy .cards .card .card-title a
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: nunito-sans, sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+}
+.legacy .cards .card .card-title a span
+{
+  /* margin: 50% 50%;
+  background-color: yellowgreen; */
+}
+/** Legacy Companies End */
+
+/*! Footer Start  */
+.footer
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #2F3D4D;
+  width: 100%;
+  height: 320px;
+  padding: 54px 50px 0px 50px;
+  box-sizing: border-box;
+}
+.footer .designed
+{
+  position: relative;
+  width: auto;
+  height: 30px;
+  margin-top: 25px;
+  /* background-color: darkkhaki; */
+}
+.footer .content
+{
+  position: relative;
+  width: 1000px;
+  height: auto;
+  /* background-color: darkblue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer p
+{
+  font-weight: 300;
+  text-align: center;
+  font-family: lato, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  word-wrap: break-word;
+  font-feature-settings: 'liga';
+}
+.footer .content .social-network
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer .content .social-network .email-link
+{
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  font-family: lato, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+}
+.footer .content .social-network ul
+{
+  display: flex;
+  flex-direction: row;
+}
+.footer .social-network li
+{
+  list-style: none;
+  padding: 6px;
+}
+.footer .social-network li a
+{
+  display: block;
+  color: #fff;
+  font-size: 30px;
+}
+/** Email Form Start  */
+.email-form
+{
+  width: 380px;
+  height: auto;
+}
+.email-form form .row
+{
+  display: flex;
+  width: 100%;
+}
+.email-form .row-1
+{
+  display: flex;
+  justify-content: space-between;
+}
+.email-form .row-2 .form-control
+{
+  height: 100px;
+}
+.email-form .row-1 .form-control
+{
+  width: 45%;
+  position: relative;
+}
+.email-form .form-control input
+{
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.email-form .form-control textarea
+{
+  width: 100%;
+  height: 40%;
+  padding: 10px 0;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.email-form .form-control input::placeholder,
+.email-form .form-control textarea::placeholder
+{
+    font-style: italic;
+    font-family: lato, sans-serif;
+    font-weight: 300;
+    padding: 6px;
+    font-size: 16px;
+    color: #fff;
+}
+   .email-form .form-control label {
+    position: absolute;
+    top:0;
+    left: 0;
+    font-style: italic;
+    font-family: lato, sans-serif;
+    font-weight: 300;
+    padding: 6px;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .email-form .form-control input:focus + label,
+  .email-form .form-control textarea:focus + label
+  {
+    display: none;
+  }
+  .email-form .form-control input:focus,
+  .email-form .form-control textarea:focus
+  {
+    background-color: white;
+    color: black;
+  }
+  .email-form button
+  {
+    width: 157px;
+    height: 33px;
+    font-weight: 300;
+    font-family: lato, sans-serif;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    /* text-transform: uppercase; */
+  }
+  .email-form button:hover
+  {
+    cursor: pointer;
+    color: #111;
+    background-color: #fff;
+  }
+/** Email Form End  */
+
+/** Small screens, laptops */
+@media screen and (max-width: 769px)
+{
+  .profitable .cards
+  {
+    /* flex-wrap: nowrap; */
+  }
+}
+/**? Tablets Devices  */
+@media screen and (max-width: 952px) and (min-width: 821px)
+{
+    /** Navbar Start  */
+    #principal-nav
+    {
+      display: none;
+    }
+    #mobile-nav
+    {
+      display: flex;
+    }
+    /** Navbar End  */
+  /** Header Start Here  */
+  .header
+  {
+    /* background-color: aqua; */
+    height: 500px;
+  }
+  .header .header-content
+  {
+    /* display: none; */
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+  .content .header .header-content .header-slogan
+  {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* top: 0; */
+    /* margin: 0; */
+    margin-top: 100px;
+    padding: 0;
+
+    /* background-color: #173853; */
+  }
+  .header .header-content .header-slogan h1
+  {
+    position: relative;
+    /* top: 0;
+    margin: 0;
+    padding: 0; */
+    /* position: relative; */
+    /* background-color: #fff; */
+  }
+  .header .banner-img
+  {
+    /* display: none; */
+    height: 500px;
+    width: 100%;
+  }
+  /** Header End Here  */
+  /** Leading Section Start Here  */
+  .leading-content
+  {
+    padding: 0px 10px;
+    /* width: 100%; */
+  }
+  .leading-content .leading-head
+  {
+    width: auto;
+    padding: 0px 10px;
+    margin-bottom: 30px;
+  }
+  .leading-content .leading-cards
+  {
+    /* justify-content: space-between; */
+  }
+  .leading-content .leading-cards .card
+  {
+    /* width: 260px; */
+    /* padding: 0; */
+    /* margin: 0; */
+  }
+  .leading-content .leading-cards .card .card-text
+  {
+    width: 240px;
+  }
+  .leading-content .leading-banner
+  {
+    height: 500px;
+  }
+  .leading-content .leading-banner .image-background
+  {
+    height: 100%;
+  }
+  /** Leading Section End Here  */
+  /** Companies Section Start Here  */
+  .companies-conten
+  {
+    /* padding: 50px 50px; */
+  }
+  .companies-content .leading-head
+  {
+    width: 900px;
+    margin-bottom: 70px;
+  }
+  /** Companies Section End Here  */
+  /** Profitable Section Start Here  */
+  .profitable .leading-head
+  {
+    width: 900px;
+    margin-bottom: 70px;
+  }
+  .profitable .cards
+  {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+  }
+  .profitable .cards .card
+  {
+    width: auto;
+    margin-bottom: 50px;
+  }
+  /** Profitable Section End Here  */
+  /** Certifications Section Start Here  */
+  .certifications .cards
+  {
+    flex-wrap: wrap;
+  }
+  .certifications .cards .card
+  {
+    width: 250px;
+    margin-bottom: 30px;
+  }
+  /** Certifications Section End Here  */
+  /** Legacy Companies Section Start Here  */
+  .legacy .leading-head
+  {
+    width: auto;
+  }
+  .legacy .cards
+  {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .legacy .cards .card
+  {
+    /* background-color: aquamarine; */
+    width: 275px;
+    /* height: auto */
+    margin-bottom: 50px;
+  }
+  /** Legacy Companies Section End Here  */
+
+}
+/**? Phones Devices  */
+@media screen and (max-width: 500px)
+{
+  /** Navbar Start  */
+  #principal-nav
+  {
+    display: none;
+  }
+  #mobile-nav
+  {
+    display: flex;
+  }
+  #mobile-nav .nav-logo
+  {
+      /* background-color: khaki; */
+      position: relative;
+      height: 100%;
+      width: 45%;
+      left: 90px;
+  }
+  #mobile-nav  .nav .nav-logo img
+  {
+      /* background-color: lawngreen; */
+  }
+  .btn-menu
+  {
+      position: absolute;
+      right: -10px;
+      font-size: 40px;
+      text-align: center;
+      display: inline-flex;
+  }
+  /** Navbar End  */
+  .content
+  {
+    width: 100%;
+    /* background-color: red; */
+  }
+  .content-title
+  {
+    width: 100%;
+    height: 100px;
+  }
+  .content-title p
+  {
+    font-size: 25px;
+  }
+  .leading-head-line
+  {
+    display: none;
+  }
+  /** Header Section Start  */
+  .header
+  {
+    position: relative;
+    width: 100%;
+    height: 350px;
+
+  }
+  .header .banner-img
+  {
+    /* display: none; */
+    top: 80px;
+    /* background-color: crimson; */
+  }
+  /* .header  */
+  .header-content
+  {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .header-content
+  {
+    height: auto;
+    /* display: none; */
+    /* background-color: cyan; */
+    /* display: none; */
+    /* width: 100%; */
+  }
+  .header .header-content .header-slogan
+  {
+    /* display: none; */
+    /* position: absolute; */
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+  }
+  .header .header-slogan h1
+  {
+    width: auto;
+    height: auto;
+    /* position: relative; */
+    /* top: 50%; */
+    /* margin-bottom: 50%; */
+    /* background-color: tomato; */
+  }
+  .header .banner-img
+  {
+    height: 300px;
+    /* display: none; */
+  }
+  /** Header Section End  */
+
+  /** Leading Section Start  */
+  .content .leading-content
+  {
+
+    /* background-color: wheat; */
+  }
+  .leading-content .leading-cards
+  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    /* background-color: tomato; */
+  }
+  .leading-content .leading-cards .card
+  {
+    margin-bottom: 30px;
+    height: auto;
+    /* background-color: teal; */
+  }
+  .leading-content .leading-banner
+  {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* background-color: red; */
+    width: 100%;
+  }
+  .leading-content .leading-banner .image-background
+  {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  .leading-banner .leading-banner-text
+  {
+    background-color:none !important;
+    opacity: initial;
+    position: relative;
+    width: 100%;
+    /* bottom: 0; */
+    /* display: none; */
+  }
+  .leading-content .leading-banner .leading-banner-text p
+  {
+    background-color: none;
+    /* background-color: #000000; */
+    width: 95%;
+  }
+  /** Leading Section End  */
+  /** Companies Section Start  */
+  .content .companies-content
+  {
+    /* display: none !important; */
+    width: 100%;
+    height: auto;
+    /* background-color: violet; */
+  }
+  .content .companies-content .content-title
+  {
+    height: 150px;
+    /* margin-bottom: 40px; */
+  }
+  .companies-content .cards
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .companies-content .cards .card
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 320px;
+     /* width: 90%; */
+     /* height: 90%; */
+     /* background-color: tomato; */
+  }
+  .companies-content .cards .card .card-logo
+  {
+    /* display: none; */
+    /* background-color: tomato; */
+    width: 100%;
+    height: 170px;
+  }
+  .companies-content .cards .card .card-logo img
+  {
+    width: 100%;
+    height: 160px;
+    /* display: none; */
+  }
+  .companies-content .cards .card .card-img
+  {
+    width: 100%;
+    height: 100%;
+    /* background-color: turquoise; */
+  }
+  .companies-content .cards .card .card-img img
+  {
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+  }
+  /** Companies Section End  */
+  /** Profitable Section Start  */
+  .profitable
+  {
+    /* display: none; */
+    width: 100%;
+    /* background-color: tomato; */
+  }
+  .profitable .cards
+  {
+    /* background-color: teal; */
+    flex-wrap: wrap;
+    /* height: 100px; */
+    /* margin-bottom: 25px; */
+  }
+  .profitable .cards .card
+  {
+    height: 240px;
+    /* background-color: tomato; */
+  }
+  /** Profitable Section End   */
+    /** Certifications Section Start   */
+    .certifications .cards .card .card-title h1
+    {
+      font-size: 19px;
+      /* background-color: lawngreen; */
+      width: auto;
+      font: lato, sans-serif;
+    }
+    .certifications
+    {
+      /* display: none; */
+      width: 100%;
+    }
+    .certifications .cards
+    {
+      flex-wrap: wrap;
+    }
+    /** Certifications Section End   */
+  /** Legacy Section Start  */
+  .legacy
+  {
+
+  }
+  .legacy .cards
+  {
+    /* background-color: chocolate; */
+    flex-wrap: wrap;
+    width: 320px;
+    height: auto;
+  }
+  .legacy .cards .card
+  {
+    position: relative;
+    z-index: 1;
+    width: 320px;
+    height: 320px;
+    margin-bottom: 25px;
+  }
+  .legacy .cards .card .background-card
+  {
+    /* display: none; */
+  }
+  /** Legacy Section End   */
+
+  /*! Footer Section Start  */
+  .footer
+  {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 5px 10px;
+  }
+  .footer .content
+  {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    /* background-color: khaki; */
+  }
+  .footer .content .content-email form .row-1
+  {
+    flex-wrap: wrap;
+  }
+  .footer .content .content-email form .row-1 .form-control,
+  .footer .content .content-email form .row-2 .form-control
+  {
+    width: 80%;
+  }
+  form .btn
+  {
+    margin-left: 20px;
+    width: 70%;
+  }
+  .footer .content .content-email
+  {
+    width: 100%;
+    /* width: 400px; */
+    /* left: 0; */
+    padding: 10px;
+    margin: 0;
+    /* display: none; */
+  }
+  .footer .content .social-network
+  {
+    margin-top: 10px;
+  }
+  .footer .content .social-network ul li
+  {
+    padding: 10px;
+  }
+  .footer .designed
+  {
+    margin-bottom: 20px;
+    /* display: none; */
+  }
+  /** Footer Section End   */
+}
+@media screen and (max-width: 1200px) and (min-width: 1025px)
+{
+    .nav-sticky .nav-item a
+    {
+        width: 180px;
+    }
+    .nav-sticky .nav
+    {
+        /* position: fixed; */
+        /* background-color: brown; */
+        /* width: 80%; */
+        margin-left: 0;
+    }
+}
+
+/**? Extra Large Devices  */
+@media screen and (min-width: 1201px)
+{
+  .nav-sticky .nav-item a
+  {
+      width: 180px;
+      /* background-color: chartreuse; */
+  }
+
+  .nav-sticky .nav
+  {
+      /* position: fixed; */
+      /* background-color: brown; */
+      /* width: 80%; */
+      margin-left: 0;
+  }
+  .nav-sticky .nav-item a
+  {
+      /* width: 180px; */
+  }
+  /** Start Leading Section  */
+  .leading-content .leading-banner
+  {
+    height: 730px;
+  }
+  /** End Leading Section  */
+  /** Profitable Section  Start*/
+  .profitable .cards
+  {
+    width: auto;
+  }
+  /** Profitable Section  End*/
+  /** Legacy Section  Start*/
+  .legacy .cards
+  {
+    width: 1000px;
+    /* background-color: cadetblue; */
+  }
+  /** Legacy Section  End*/
+}

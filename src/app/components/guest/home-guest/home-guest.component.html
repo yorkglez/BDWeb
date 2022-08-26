@@ -1,0 +1,385 @@
+<div class="content">
+    <!--* Start Header -->
+    <div class="header" @enterState>
+        <div class="header-content">
+            <app-navbar id="mobile-nav"></app-navbar>
+            <div id="principal-nav" class="nav-container" [ngClass]="isStickyNav ? 'nav-sticky' : 'nav-header'">              
+                <nav class="nav">
+                    <div class="nav-logo">
+                        <a routerLink="/home">
+                            <img class="nav-logo" src="assets/images/svg-pegado-5504x150.svg?crc=4092171756" alt="">
+                        </a>
+                    </div>
+                    <ul class="nav-menu">               
+                        <li class="nav-item"><a  routerLink="/aboutus">ABOUT US</a></li>
+                        <li class="nav-item">
+                            <a (click)="gotoCompanies()" >COMPANIES</a>
+                            <ul class="nav-drop">
+                                <li><a routerLink="/berries">Berries</a></li>
+                                <li><a  routerLink="/genetics">Genetics</a></li>
+                                <li><a routerLink="/nursery">Nursery</a></li>
+                                <li><a routerLink="/produce">Produce</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a routerLink="/sustainability">SUSTAINABILITY</a>
+                        </li>
+                        <li class="nav-item"><a  routerLink="/contactus">contact us</a></li>
+                    </ul>
+                    <span class="btn-menu" (click) = "showMenu()">
+                        <i class="fa fa-bars"></i>
+                    </span>  
+                </nav>
+            </div>
+            <div class="header-slogan">
+                <h1>
+                    TRANSFORMING THE MEXICAN AGROFORESTRY INDUSTRY
+                </h1>
+            </div>
+        </div>
+        <div class="banner-img">
+            <img  data-orig-src="images/dji_0066.jpg?crc=4086208895" src="/assets/images/dji_0066.jpg?crc=4086208895" />
+        </div>    
+    </div>
+    <!--* End Header -->
+    <!--? Leading Content Start -->
+    <div class="leading-content section-content" (mouseenter)="leadingEnter()">
+        <!--* Leading Header Start -->
+        <div class="leading-head content-title">
+            <div class="grpelem shared_content" class="leading-head-line" data-sizePolicy="fixed" data-pintopage="page_fixedCenter"
+            data-leftAdjustmentDoneBy="pu7146" data-content-guid="u7146_content">
+            </div>
+            <div class="leading-text">
+                <p>The leading agroforestry business developer</p>
+            </div>        
+            <div class="grpelem shared_content" class="leading-head-line" data-sizePolicy="fixed" data-pintopage="page_fixedCenter"
+            data-leftAdjustmentDoneBy="pu7146" data-content-guid="u7146_content">
+            </div>
+        </div>
+        <!--* Leading Cards Start -->
+        <div class="leading-cards" @focusState (@focusState.done)="animationLeadingDone()" *ngIf="isShowLeading" >
+            <div class="card">
+                <div class="card-icon card-icon-1-color">
+                    <img class="svg temp_no_img_src" id="u7293" data-orig-src="/assets/images/svg-pegado-10762x137.svg?crc=4098895615"
+                    width="92" height="118" alt=""
+                    data-mu-svgfallback="/assets/images/svg%20pegado%2010762x137_poster_.png?crc=326210123"
+                    src="/assets/images/svg%20pegado%2010762x137_poster_.png?crc=326210123" />
+                </div>
+                <div class="card-text">
+                    <p>We built 9 of the most successful agroforestry companies in Mexico</p>
+                </div>              
+            </div>
+            <div class="card">
+                <div class="card-icon card-icon-2-color">                   
+                <img class="svg temp_no_img_src" id="u7324" data-orig-src="images/svg-pegado-11869x118.svg?crc=3848565149"
+                width="119" height="119" alt=""
+                data-mu-svgfallback="images/svg%20pegado%2011869x118_poster_.png?crc=508367637"
+                src="/assets/images/svg%20pegado%2011869x118_poster_.png?crc=508367637" />
+                </div>
+                <div class="card-text">
+                    <p>Actively operating on 4 continents, 12 countries and 16 mexican states</p>
+                </div>              
+            </div>
+            <div class="card">
+                <div class="card-icon card-icon-3-color">
+                    <img class="svg temp_no_img_src" id="u7352" data-orig-src="images/svg-pegado-12565x118.svg?crc=277485893"
+                    width="126" height="119" alt=""
+                    data-mu-svgfallback="images/svg%20pegado%2012565x118_poster_.png?crc=4045463155"
+                    src="/assets/images/svg%20pegado%2012565x118_poster_.png?crc=4045463155" />
+                </div>
+                <div class="card-text">
+                    <p>Committed to sustainable development</p>
+                </div>              
+            </div>
+        </div>
+    <!--* Leading Banner Start -->
+    <div class="leading-banner" @enterState *ngIf="isShowLeadingBanner">
+        <div class="image-background">
+            <img src="assets/images/drone%20gopro-crop-u7388.jpg?crc=253601116" />
+        </div>
+        <div class="leading-banner-text">
+            <p>Since 2000, BlueDrop has been the leading developer of sustainable agricultural and forestry
+                businesses in Mexico. Our model is based on encouraging the transformation of the industry through diverse,
+                highly profitable projects with positive economic, social and environmental impact.</p>
+        </div>
+    </div>
+    </div>
+    <!--? Section Companies Start -->
+    <div #companies id="companies"  class="companies-content section-content">
+        <!-- Title Content Start -->
+        <div class="leading-head content-title">
+            <div class="grpelem shared_content" class="leading-head-line" data-sizePolicy="fixed" data-pintopage="page_fixedCenter"
+            data-leftAdjustmentDoneBy="pu7146" data-content-guid="u7146_content">
+            </div>
+            <div class="leading-text">
+                <p>WE DEVELOP SUCCESSFUL COMPANIES</p>
+            </div>        
+            <div class="grpelem shared_content" class="leading-head-line" data-sizePolicy="fixed" data-pintopage="page_fixedCenter"
+            data-leftAdjustmentDoneBy="pu7146" data-content-guid="u7146_content">
+            </div>
+        </div>
+        <!-- Cards Start -->
+        <div class="cards">
+            <!-- Berries  -->
+            <div class="card" routerLink="/berries">            
+                <div class="card-img">
+                    <img alt="" src="assets/images/_dsc0648-crop-u3600.jpg?crc=4274065607" />
+                </div>       
+                <div class="card-logo">
+                    <img alt="" width="393" height="170" src="assets/images/bluedrop_berries%20blanco-u5377.png?crc=3776795962" />
+                </div>                                
+            </div>
+            <!-- Nursery  -->
+            <div class="card"  routerLink="/nursery">            
+                <div class="card-img">
+                    <img alt=""
+                  src="assets/images/p1050071-crop-u7510.jpg?crc=4027040058" />
+                </div>       
+                <div class="card-logo">
+                    <img alt="" width="393" height="170" src="assets/images/bluedrop_nursery%20blanco-u5357.png?crc=3830471578" />
+                </div>                                
+            </div>
+            <!-- Produce  -->
+            <div class="card" routerLink="/produce">            
+                <div class="card-img">
+                    <img alt="" 
+                  src="assets/images/lemon_1200x1200-crop-u7527.jpg?crc=3953093708" />
+                </div>       
+                <div class="card-logo">
+                    <img alt="" width="393" height="170" src="assets/images/bluedrop_produce%20blanco-u5397.png?crc=527553723" />
+                </div>                                
+            </div>
+            <!-- Genetics  -->
+            <div class="card" routerLink="/genetics">            
+                <div class="card-img">
+                    <img 
+                  src="assets/images/0cbea456-688f-411c-a21b-9563e97b66ab-crop-u7561.jpg?crc=488904856" />
+                </div>       
+                <div class="card-logo">
+                    <img alt="" src="assets/images/bluedrop_genetics%20blanco-u5423.png?crc=298346825" />
+                </div>                                
+            </div>
+        </div>
+    </div>
+    <!--? Profitable Companies Start -->
+    <div class="profitable section-content">
+        <!--* Title Content Start -->
+        <div class="leading-head content-title">
+            <div class="grpelem shared_content" class="leading-head-line" data-sizePolicy="fixed" data-pintopage="page_fixedCenter"
+            data-leftAdjustmentDoneBy="pu7146" data-content-guid="u7146_content">
+            </div>
+            <div class="leading-text">
+                <p>From the initial idea to highly profitable companies</p>
+            </div>        
+            <div class="grpelem shared_content" class="leading-head-line" data-sizePolicy="fixed" data-pintopage="page_fixedCenter"
+            data-leftAdjustmentDoneBy="pu7146" data-content-guid="u7146_content">
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">
+                    <img src="assets/images/svg-pegado-7756x77.svg?crc=3786018568" width="120" height="119" alt=""
+                    data-mu-svgfallback="images/svg%20pegado%207756x77_poster_.png?crc=330970214"
+                    />
+                </div>
+                <div class="card-title">
+                    <p class="card-text-color-1">IDENTIFY OPPORTUNITIES</p>
+                </div>
+                <div class="card-text">
+                    <p>Highly specialized knowledge in the industry</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="assets/images/svg-pegado-7756x772.svg?crc=3929814304"
+                    width="120" height="119" alt=""/>
+                </div>
+                <div class="card-title">
+                    <p class="card-text-color-2">R&D</p>
+                </div>
+                <div class="card-text">
+                    <p>Specialized teams with the best practices</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="assets/images/svg-pegado-7756x773.svg?crc=3966799409"
+                    width="120" height="119" alt=""/>
+                </div>
+                <div class="card-title">
+                    <p class="card-text-color-3">FUNDRAISING</p>
+                </div>
+                <div class="card-text">
+                    <p>Successful track record funding projects</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="assets/images/svg-pegado-7756x774.svg?crc=24017904"
+                    width="120" height="119" alt=""/>
+                </div>
+                <div class="card-title">
+                    <p class="card-text-color-4">WORLD CLASS OPERATORS</p>
+                </div>
+                <div class="card-text">
+                    <p>Transforming ideas into successful ventures</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="assets/images/svg-pegado-7756x775.svg?crc=4147773897"
+                    width="120" height="119" alt=""
+                    />
+                </div>
+                <div class="card-title">
+                    <p class="card-text-color-5">BRAND BUILDING</p>
+                </div>
+                <div class="card-text">
+                    <p>Every project is a new value-added brand</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="assets/images/svg-pegado-7756x776.svg?crc=4099052114"
+                    width="120" height="119" alt=""/>
+                </div>
+                <div class="card-title">
+                    <p class="card-text-color-6">RESULTS</p>
+                </div>
+                <div class="card-text">
+                    <p>Accelerated growth in record time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--? Section Certifications Start-->
+    <div class="certifications section-content">
+       <!--* Title Content Start -->
+       <div class="leading-head content-title">
+            <div class="grpelem shared_content" class="leading-head-line" data-sizePolicy="fixed" data-pintopage="page_fixedCenter"
+            data-leftAdjustmentDoneBy="pu7146" data-content-guid="u7146_content">
+            </div>
+            <div class="leading-text">
+                <p>CERTIFICATIONS</p>
+            </div>        
+            <div class="grpelem shared_content" class="leading-head-line" data-sizePolicy="fixed" data-pintopage="page_fixedCenter"
+            data-leftAdjustmentDoneBy="pu7146" data-content-guid="u7146_content">
+            </div>
+        </div> 
+        <div class="cards">
+            <!-- Proteak Start  -->
+            <div class="card">
+                <div class="card-title">
+                    <h1>proteak</h1>
+                </div>
+                <div class="content">
+                    <div class="image">
+                        <img class="block" id="u8068_img" alt="" width="71" height="83" src="assets/images/fsc%20logo_portrait_green_c006434-crop-u8068.jpg?crc=12703106">
+                    </div>
+                </div>
+            </div>  
+            <!-- Tecnotabla Start           -->
+            <div class="card card-tecnotabla">
+                <div class="card-title">
+                    <h1>tecnotabla</h1>
+                </div>
+                <div class="content">
+                    <div class="image">
+                        <img alt="" width="71" height="83" src="assets/images/fsc%20logo_portrait_green_c006434-crop-u8068.jpg?crc=12703106">
+                    </div>
+                    <div class="image">
+                        <img alt="" width="92" height="54" src="assets/images/svg%20pegado%205234x31_poster_.png?crc=4037270413">
+                        <img class="im" width="98" height="33" src="assets/images/svg%20pegado%205253x18_poster_.png?crc=3978355653">
+                    </div>
+                </div>
+            </div>
+            <!-- Teakhaus Start  -->
+            <div class="card card-tecnotabla">
+                <div class="card-title">
+                    <h1>teakhaus</h1>
+                </div>
+                <div class="content">
+                    <div class="image">
+                        <img alt="" width="71" height="83" src="assets/images/fsc%20logo_portrait_green_c006434-crop-u8068.jpg?crc=12703106">
+                    </div>
+                    <div class="image">
+                        <img alt="" width="94" height="81" src="assets/images/svg-pegado-6384x57.svg?crc=61922153">
+                    </div>
+                </div>
+            </div>
+            <!-- Bluedrop produce Start  -->
+            <div class="card card-tecnotabla">
+                <div class="card-title">
+                    <h1>bluedrop produce</h1>
+                </div>
+                <div class="content">
+                    <div class="image">
+                        <img  alt="" width="145" height="62" src="assets/images/logoprimusgfs.png?crc=464649641">
+                        <img alt="" width="139" height="65" src="assets/images/global-g-a-p-logo-7ae0f2947e-seeklogocom.png?crc=201435567">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--? Section Legacy Companies Start  -->
+    <div class="legacy section-content">
+       <!--* Title Content Start -->
+       <div class="leading-head content-title">
+            <div class="grpelem shared_content" class="leading-head-line" data-sizePolicy="fixed" data-pintopage="page_fixedCenter"
+            data-leftAdjustmentDoneBy="pu7146" data-content-guid="u7146_content">
+            </div>
+            <div class="leading-text">
+                <p>Legacy companies</p>
+            </div>        
+            <div class="grpelem shared_content" class="leading-head-line" data-sizePolicy="fixed" data-pintopage="page_fixedCenter"
+            data-leftAdjustmentDoneBy="pu7146" data-content-guid="u7146_content">
+            </div>
+        </div> 
+        <div class="cards">
+            <!-- Proteak Start  -->
+            <div class="card">
+                <div class="card-image">
+                    <img alt="" width="275" height="248" src="assets/images/teak%20house%20tabasco%20050918_229-crop-u5562.jpg?crc=3892111360">
+                </div>
+                <div class="background-card">
+                </div>
+                <div class="card-title">
+                   <a href="http://www.proteak.com">proteak</a>
+                </div>
+            </div>
+            <!-- Tecnotabla Start  -->
+            <div class="card">
+                <div class="card-image">
+                    <img alt="" width="275" height="248" src="assets/images/img_2595-crop-u5601.jpg?crc=332706307">
+                </div>
+                <div class="background-card">
+                </div>
+                <div class="card-title">
+                   <a href="http://www.tecnotabla.com"><span>tecnotabla</span></a>
+                </div>
+            </div>
+            <!-- Teakhaus Start  -->
+            <div class="card">
+                <div class="card-image">
+                    <img alt="" width="275" height="248" src="assets/images/7-crop-u5664.jpg?crc=3994133742">
+                </div>
+                <div class="background-card">
+                </div>
+                <div class="card-title">
+                   <a href="http://www.teakhaus.com">teakhaus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--? Section Footer Start  -->
+    <app-footer-guest></app-footer-guest>
+</div>
+
+
+
+
+
+
+
+
+
+

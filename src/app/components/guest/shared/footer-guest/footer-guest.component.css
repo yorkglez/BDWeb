@@ -1,0 +1,348 @@
+/** Footer Start  */
+.footer
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2F3D4D;
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  padding: 54px 50px 0px 50px;
+  box-sizing: border-box;
+}
+.footer .content .content-email h1
+{
+  color: #fff;
+  line-height: 23px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 19px;
+}
+.footer .designed
+{
+  position: relative;
+  width: auto;
+  height: 30px;
+  /* margin-top: 15px; */
+}
+.privacy-link
+{
+  position: relative;
+  color: #fff;
+  opacity: 0.8;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.privacy-link:hover
+{
+  cursor: pointer;
+  color: #fff;
+  opacity: 1;
+}
+.footer .content
+{
+  position: relative;
+  width: 1000px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer p
+{
+  font-weight: 300;
+  text-align: center;
+  font-family: lato, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  word-wrap: break-word;
+  /* border-bottom: 10px; */
+  font-feature-settings: 'liga';
+}
+.footer .content .social-network
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer .content .social-network .bluedrop-logo
+{
+  width: 100%;
+  /* background-color: red; */
+  height: 50px;
+}
+.footer .content .social-network .bluedrop-logo img
+{
+  width: 100%;
+  height: 100%;
+}
+.footer .content .social-network .email-link
+{
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  font-family: lato, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 17px;
+}
+.footer .content .social-network .email-link:hover
+{
+  font-weight: 500;
+}
+.footer .content .social-network ul
+{
+  display: flex;
+  flex-direction: row;
+}
+.footer .social-network li
+{
+  list-style: none;
+  padding: 6px;
+}
+.footer .social-network li a
+{
+  display: block;
+  color: #fff;
+  font-size: 30px;
+}
+/** Email Form Start  */
+.email-form
+{
+  width: 420px;
+  height: auto;
+}
+.email-form form .row
+{
+  display: flex;
+  width: 100%;
+}
+.email-form .row-1
+{
+  display: flex;
+  justify-content: space-between;
+}
+.email-form .row-2
+{
+  width: 100%;
+}
+.email-form .row-2 .form-control
+{
+  height: 100px;
+  width: 100%;
+}
+.email-form .row-1 .form-control
+{
+  width: 48%;
+  position: relative;
+}
+.email-form .form-control input
+{
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.email-form .form-control textarea
+{
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  resize: none;
+}
+.email-form .form-control input::placeholder,
+.email-form .form-control textarea::placeholder
+{
+    font-style: italic;
+    font-family: lato, sans-serif;
+    font-weight: 300;
+    padding: 6px;
+    font-size: 16px;
+    color: #fff;
+    opacity: 1;
+}
+   .email-form .form-control label {
+    position: absolute;
+    top:0;
+    left: 0;
+    font-style: italic;
+    font-family: lato, sans-serif;
+    font-weight: 300;
+    padding: 6px;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .email-form .form-control input:focus + label,
+  .email-form .form-control textarea:focus + label
+  {
+    display: none;
+  }
+  .email-form .form-control input:focus,
+  .email-form .form-control textarea:focus
+  {
+    background-color: white;
+    color: black;
+  }
+  .email-form button
+  {
+    width: 157px;
+    height: 33px;
+    font-weight: 300;
+    font-family: lato, sans-serif;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  .email-form button:hover
+  {
+    cursor: pointer;
+    color: #111;
+    background-color: #fff;
+  }
+
+.alert-message-success
+{
+  visibility: hidden;
+  color: #fff;
+  font-weight: 300;
+  font-family: lato, sans-serif;
+  width: 100%;
+  /* margin-top: 150px !important; */
+  font-size: 17px;
+  /* background-color: red; */
+}
+.alert-message-success.active
+{
+  visibility: visible;
+  transition: .3s ease;
+}
+/** Email Form End  */
+/**? Tablets Devices  */
+@media screen and (max-width: 952px) and (min-width: 700px)
+{
+  .footer
+  {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 5px 10px;
+  }
+  .footer .content
+  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px 20px;
+    width: 100%;
+    /* flex-direction: column; */
+  }
+
+  form .btn
+  {
+    margin-left: 50px;
+    height: 35px;
+    width: 70%;
+  }
+}
+/**? Phones Devices  */
+@media screen and (max-width: 500px)
+{
+    /** Footer Section Start  */
+  .footer
+  {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 5px 10px;
+  }
+  .footer .content
+  {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    /* background-color: khaki; */
+  }
+
+  .footer .content .content-email
+  {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    /* width: 400px; */
+    /* left: 0; */
+    padding: 10px;
+    margin: 0;
+    /* background-color: hotpink; */
+    /* display: none; */
+  }
+
+  .footer .content .email-form
+  {
+    position: relative;
+    width: 100%;
+  }
+  .footer .content .content-email form
+  {
+    position: relative;
+    width: 100%;
+    /* background-color: greenyellow; */
+  }
+
+  .footer .content .content-email form .row-1
+  {
+    position: relative;
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .footer .content .content-email form .row-1 .form-control,
+  .footer .content .content-email form .row-2 .form-control
+  {
+    width: 100%;
+  }
+  form .btn
+  {
+    margin-left: 20px;
+    width: 80%;
+  }
+
+  .footer .content .social-network
+  {
+    margin-top: 10px;
+  }
+  .footer .content .social-network ul li
+  {
+    padding: 10px;
+  }
+  .footer .designed
+  {
+    margin-bottom: 20px;
+    /* display: none; */
+  }
+  /** Footer Section End   */
+}

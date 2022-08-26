@@ -1,0 +1,287 @@
+
+/** Navbar Start */
+.nav-container
+{
+    background-color: #173853;
+    height: 85px;
+    width: 100%; 
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+}
+.nav
+{
+    background-color: #173853;
+    height: 85px;
+    width: 100%;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+}
+.nav-menu 
+{
+    display: flex;
+    list-style: none;
+    margin-left: 20%;
+}
+.nav-item
+{
+    padding-left: 5px;
+}
+.nav-item:hover .nav-drop, .nav-item:focus .nav-drop
+{
+    visibility: visible;
+    opacity: 1;
+}
+.nav-item a
+{
+    box-sizing: border-box;
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;  
+    border: 1px solid #173853; 
+    text-transform: uppercase;    
+    text-align: center;
+    line-height: 17px;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-feature-settings: 'liga';
+    bottom: 0;
+}
+.nav-item a:hover
+{
+    cursor: pointer;
+    border: 1px solid white;
+    box-sizing: border-box;
+    transition: all .5s ease;  
+}
+.nav-item a.active
+{
+    border-bottom: 1px solid white; 
+}
+.nav-item .nav-drop
+{
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    visibility: hidden;
+    position: absolute; 
+    background-color: #fff;
+    list-style: none;
+    z-index: 10000;
+    box-sizing: border-box;
+    box-shadow:  0 0 10px black;
+}
+.nav-item .nav-drop a
+{
+    color: #000;
+    padding-left: 20px;
+    border: 1px solid #fff; 
+    text-align: left;
+}
+.nav-item .nav-drop a:hover
+{
+    color: #fff;
+    transition: all .5s ease;
+    background-color:#173853;
+}
+.nav-logo
+{
+    position: relative;
+    width: 158px;
+    height: 49px;
+    left: 10%; 
+}
+.nav-logo img 
+{
+    width: 100%;
+    height: 100%;
+}
+.btn-menu
+{
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+/*? Phone Devices  */
+@media screen and (max-width: 500px)
+{
+    .nav-menu 
+    {
+        /* display: none; */
+    }
+    .nav-container
+    {
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        /* background-color: green; */
+    }
+    .nav
+    {
+        /* display: none; */
+        position: sticky;
+        /* z-index: 2000; */
+        width: 100%;
+        margin: 0;
+        left: 0;
+    }
+    .nav .nav-logo
+    {
+        /* background-color: khaki; */
+        position: relative;
+        height: 100%;
+        width: 45%;
+        left: 90px;
+    }
+    .nav .nav-logo img
+    {
+        /* background-color: lawngreen; */
+    }
+    .btn-menu
+    {
+        position: absolute;
+        right: -10px;
+        font-size: 40px;
+        text-align: center;
+        display: inline-flex;
+    }
+    .nav-menu
+    {
+        position: fixed;
+        margin-left: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: #173853;
+        top: -100%;
+        margin-left: 0;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    .nav-menu li 
+    {
+        margin: 30px 0 0 0;
+    }
+    .nav-menu li a .active
+    {
+        color: #173853;
+        background-color: rgba(255, 255, 255, 0.712);
+    }
+    .nav .nav-menu .nav-item  a:hover
+    {
+        color: #173853;
+        background-color: #fff !important;
+    }
+    .nav-item .nav-drop
+    {
+        width: 100%;
+        background-color: #173853;
+        box-shadow: none;
+    }
+    .nav-item .nav-drop a
+    {
+        color: #fff
+    }
+    ul.show 
+    {
+        top: 85px;
+    }
+}
+/**? Tablets Devices  */
+@media screen and (max-width: 952px) and (min-width: 700px)
+{
+    .nav-container
+    {
+        /* background-color: slateblue; */
+    }
+    .nav-container .nav
+    {
+        margin-left: 0;
+        width: 100%;
+        /* background-color: red; */
+    }
+    .nav-container .nav .nav-menu
+    {
+        margin-left: 120px;
+    } 
+    .nav-container .nav .nav-menu li 
+    {
+        /* width: auto; */
+        /* background-color: royalblue; */
+    }
+    .nav-container .nav .nav-menu li a 
+    {
+        text-align: center;
+        font-size: 15px;
+        width: 130px;
+        padding: 10px 0px;
+    }
+    .nav-container .nav .nav-logo
+    {
+        /* background-color: blanchedalmond; */
+        width: 158px !important;
+        height: 49px !important;
+        /* background-color: red; */
+        /* margin-left: 20px; */
+        /* background-color: violet; */
+    }
+}
+/**? Laptops and Tables Devices  */
+/* @media screen and (max-width: 1024px) and (min-width: 769px)
+{
+    .nav-item a
+    {
+        display: none;
+        width: 300px;
+    }
+} */
+/**? Laptops and Desktop Devices  */
+@media screen and (max-width: 1200px) and (min-width: 1025px)
+{
+    .nav-item a
+    {
+        width: 180px;
+    }
+    .nav
+    {
+        /* position: fixed; */
+        /* background-color: brown; */
+        /* width: 80%; */
+        margin-left: 0;
+    }
+}
+/**? Extra Large Devices  */
+@media screen and (min-width: 1201px) 
+{
+    .nav-item a
+    {
+        width: 180px;
+    }
+    
+    .nav
+    {
+        /* position: fixed; */
+        /* background-color: brown; */
+        /* width: 80%; */
+        margin-left: 0;
+    }
+    .nav-container
+    {
+        /* position: fixed; */
+    }
+    .nav .nav-logo
+    {   
+
+        position: relative;
+        /* width: 158px; */
+        /* height: 49px;  */
+    }
+    .nav .nav-menu
+    {
+        /* background-color: aquamarine; */
+        /* display: none; */
+    }
+}

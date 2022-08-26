@@ -1,0 +1,377 @@
+$primary-color: #243065
+$secondary-color: #B90C4A
+$smallScreen: 520px 
+$tabletScreen: 952px
+$desktopScreen: 1366px
+$LargeDesktopScreen: 1920px
+@font-face 
+ font-family: "__Lemon Bird_5"
+    src: url("../fonts/lemonbird-regular-webfont.eot")
+    src: local("☺"), url("../fonts/lemonbird-regular-webfont.woff") format("woff"),
+    url("../fonts/lemonbird-regular-webfont.svg") format("svg")
+    font-weight: 400
+    font-style: normal
+
+.header
+    height: 85px
+.section-header
+    display: none
+    width: 100%
+    height: 500px
+    // background: red
+    video 
+        width: 100%
+        height: 100%
+.section-revolution
+    margin-top: 25px
+    width: 100%
+    display: flex 
+    flex-direction: row
+    .content 
+        display: flex
+        align-items: center
+        flex-direction: column
+        width: 80%
+        .content-title
+            width: 570px
+            line-height: 65px
+            text-align: center
+            font-size: 80px
+            font-family: '__Lemon Bird_5' 
+            font-weight: 400
+            color: $primary-color
+            margin-bottom: 25px
+            span 
+                color: $secondary-color
+        .content-text 
+            width: 683px
+            p
+                font-size: 22px
+                line-height: 26px
+                font-weight: 500
+                text-align: center
+                &:first-of-type
+                    margin-bottom: 40px
+    .left-image
+        width: 293px
+        img 
+            width: 100%
+    .right-image
+        // background-color: red
+        width: 310px
+        img
+            width: 100%
+.section-how
+    position: relative
+    width: 100%
+    .image-background   
+        z-index: 100
+        width: 100%
+        img
+            width: 100%
+    .content 
+        position: absolute
+        z-index: 200
+        width: 100%
+        height: 100%
+        top: 0
+        background-color: rgba(0, 0, 0, 0.5)
+        display: flex
+        justify-content: center
+        .content-text 
+            height: 500px
+            position: relative
+            top: 20%
+            left: -15%
+            p 
+                color: #fff
+                text-shadow: 6px 6px 8px rgba(0, 0, 0, .5)
+                font-family: lato, sans-seri;               
+                font-weight: 500;
+                text-align: center
+                line-height: 44px
+                text-transform: uppercase
+                font-size: 36px;
+                margin-bottom: 50px          
+.section-growmap
+    position: relative
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    .content-title
+        margin-top: 50px
+        margin-bottom: 120px
+        h1 
+            line-height: 65px
+            text-align: center
+            font-size: 80px
+            color: #243065
+            font-family: '__Lemon Bird_5'
+            font-weight: 400
+            color: $primary-color
+            text-transform: uppercase
+            span 
+                color: $secondary-color
+    .content
+        height: auto
+        position: relative
+        margin-bottom: 80px
+        .route-image
+            width: 858px
+            height: 447px
+            img
+                width: 100%
+        .cards
+            position: absolute
+            .card
+                // position: relative
+                width: 180px
+                height: 180px
+                .card-title
+                    line-height: 41px
+                    text-align: center
+                    font-size: 50px
+                    // color: #243065
+                    font-family: '__Lemon Bird_5'
+                    font-weight: 400
+                .card-image
+                    width: 170px
+                    height: 170px
+                    border: 8px solid $primary-color
+                    border-radius: 50%
+                    img
+                        border-radius: 50%
+            .card-plant       
+                position: relative      
+                left: -40%
+            .card-labors
+                position: absolute 
+                left: 17%
+                bottom: -160%
+            .card-nutrition
+                position: absolute
+                left: 130%
+                top: -35%
+            .card-growth
+                position: absolute
+                left: 246%
+                bottom: -160%
+            .card-harvest
+                position: absolute
+                left: 356%
+                top: -40%
+            .card-pruning
+                position: absolute
+                left: 420%
+                bottom: -130%
+    .corner-image
+        width: 100%
+        position: relative
+        left: 0
+        // bottom: 0
+.section-ourpeople
+    position: relative
+    width: 100%
+    display: flex
+    justify-content: center
+    .image-background
+        width: 100%
+        img
+            width: 100%
+    .content     
+        display: flex
+        align-items: center
+        flex-direction: column   
+        position: absolute
+        top: 5%
+        .section-title
+            width: 555px
+            h1 
+                text-align: center
+                font-size: 80px 
+                line-height:  72px
+                font-weight: 400
+                font-family: '__Lemon Bird_5'
+                span 
+                    color: $secondary-color
+        .section-subtitle
+            h1
+                text-transform: uppercase
+                font-size: 39px
+                line-height: 35px
+                font-weight: 900
+        .btn 
+            margin-top: 25px
+            font-size: 24px
+            color: #fff
+            border: none 
+            border: 1px solid #fff
+            width: 280px
+            height: 50px
+            background: none
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, .2)
+            &:hover
+                background-color: #fff
+                color: #000
+                cursor: pointer
+                transition: all 0.2s ease 0s
+.section-choose 
+    width: 100%
+    padding-bottom: 80px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    .content-title
+        margin-top: 30px
+        font-size: 80px
+        font-weight: 400
+        color: $primary-color
+        font-family: '__Lemon Bird_5'
+        line-height: 65px
+        text-align: center
+        margin-bottom: 50px
+    .cards
+        position: relative
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-around
+        width: 50%
+        .card
+            width: 375px
+            display: flex
+            align-items: center
+            flex-direction: column
+            position: relative
+            bottom: 0
+            .card-image
+            .card-title
+                font-family: '__Lemon Bird_5'
+                line-height: 41px
+                font-size: 50px
+                font-weight: 400
+.section-followus
+    width: 100%
+    margin-bottom: 40px
+    .section-title
+        font-family: '__Lemon Bird_5'
+        line-height: 41px
+        font-size: 80px
+        font-weight: 400   
+        text-align: center
+.color-red
+    color: $secondary-color            
+
+//? Responsive
+@media (max-width: $smallScreen)
+    .section-revolution
+        // display: none
+        width: 100%
+        margin-bottom: 20px
+        margin-top: 15px !important
+        .content
+            width: 100%
+            // background: red
+            .content-title
+                font-size: 60px
+                width: 100%
+            .content-text
+                width: 100%
+        .left-image
+            display: none
+        .right-image
+            display: none
+    .section-how
+        // display: flex 
+        display: none
+        flex-direction: column
+        height: 700px
+        width: 100%
+        margin-bottom: 30px
+        .image-background
+            width: 100%
+            height: 250px !important
+            img 
+                width: 100%
+                height: 100%
+        .content 
+           position: relative !important
+           width: 100%
+           background: #173853
+           height: auto !important
+           padding-top: 15px
+           .content-text              
+               height: 100%
+               top: 0%
+               left: 0%
+               width: 100% !important
+               p
+                   margin-bottom: 35px 
+    .section-ourpeople
+        height: auto
+        display: flex
+        flex-direction: column-reverse
+        .image-background
+            width: 100%
+            height: 250px
+            img 
+                width: 100%
+                height: 100%
+        .content
+            position: relative
+            .section-title
+                width: 100%
+                h1 
+                    font-size: 70px
+                    line-height:  65px
+            .section-subtitle
+                width: 100%
+                h1  
+                    font-size: 30px
+                    text-align: center
+            .btn 
+                background-color: #173853
+                &:hover
+                    background-color: #173353
+                    color: #fff
+        // display: none
+    .section-choose 
+        .cards
+            width: 100%
+            flex-wrap: wrap
+    .section-followus
+        // display: none
+    .section-growmap
+        display: none    
+@media (max-width: $tabletScreen) and (min-width: 821px)
+    .section-growmap
+        .content
+            width: 85%          
+            .route-image
+                width: 100%
+            .cards
+                .card
+                    // display: none !important
+                    // background: pink
+                    // height: 120px !important
+                    // width: 120px !important
+                    .card-image
+                        // display: none !important
+                        height: 140px !important
+                        width: 140px !important
+                        img
+                            width: 100%
+                .card-plant 
+                    left: -30%
+                .card-pruning
+                    left: 395% !important
+        .corner-image 
+            img 
+                width: 357px  
+             
+// @media (max-width: $desktopScreen) and (min-width: 1025px)
+//     .section-growmap
+//         .corner-image
+            
